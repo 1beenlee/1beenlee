@@ -1,6 +1,6 @@
 # Wonbeen Lee (이원빈) · 1beenlee
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Wonbeen%20Lee-blue?style=for-the-badge&logo=vercel&logoColor=white)](https://wonbeenlee.vercel.app/)
+[![Career](https://img.shields.io/badge/Career-Wonbeen%20Lee-blue?style=for-the-badge&logo=vercel&logoColor=white)](https://wbeen-personal-kb.vercel.app/career/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-wonbeenlee-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wonbeenlee/recent-activity/all/)
 
 Global Product Manager @ emro — **Caidentia (AI-powered SRM/S2P Procurement SaaS)**  
