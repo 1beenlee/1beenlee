@@ -686,7 +686,7 @@
       
   <div class="docs-do-dont">
     <article data-guidance="do">
-      <span class="wbds-meta">DO</span>
+      <span class="wbds-meta docs-guidance-label"><span class="docs-guidance-mark" aria-hidden="true">✓</span><span>DO</span></span>
       <ul>
         <li>raw palette value 대신 <code>--wb-color-action</code> 같은 semantic token을 사용합니다.</li>
         <li>가장 강한 대비는 다음으로 중요한 결정이나 행동을 위해 남겨둡니다.</li>
@@ -696,7 +696,7 @@
       </ul>
     </article>
     <article data-guidance="dont">
-      <span class="wbds-meta">DON'T</span>
+      <span class="wbds-meta docs-guidance-label"><span class="docs-guidance-mark" aria-hidden="true">×</span><span>DON'T</span></span>
       <ul>
         <li>Warm Sakura를 모든 곳의 generic decorative accent로 사용하지 않습니다.</li>
         <li>Signal을 Positive/success로 사용하지 않습니다.</li>
@@ -718,10 +718,10 @@
   <div class="docs-guidance-stack">
     <p>WBDS에서 색상은 상태를 보조하는 evidence이며 유일한 evidence가 아닙니다. Light와 Dark mapping은 동일한 상태 의미와 focus visibility를 보존해야 합니다.</p>
     <div class="docs-color-contrast-grid">
-      <article><strong>7:1</strong><span>Canvas/Surface 위 body text</span></article>
-      <article><strong>4.5:1</strong><span>token gate가 검증하는 Muted text, Action, Signal, Critical 및 semantic state text 조합</span></article>
-      <article><strong>7:1</strong><span>Soft Signal/Critical/Positive/Caution/Info surface 위 text 및 instrument text</span></article>
-      <article><strong>3:1</strong><span>Canvas 대비 Focus color</span></article>
+      <article class="docs-color-contrast-card"><strong>7:1</strong><span>Canvas/Surface 위 body text</span></article>
+      <article class="docs-color-contrast-card"><strong>4.5:1</strong><span>token gate가 검증하는 Muted text, Action, Signal, Critical 및 semantic state text 조합</span></article>
+      <article class="docs-color-contrast-card"><strong>7:1</strong><span>Soft Signal/Critical/Positive/Caution/Info surface 위 text 및 instrument text</span></article>
+      <article class="docs-color-contrast-card"><strong>3:1</strong><span>Canvas 대비 Focus color</span></article>
     </div>
     <p><code>scripts/validate-tokens.mjs</code>는 이 contrast floor를 Light와 Dark token map 모두에서 검증합니다. token gate 통과가 컴포넌트 수준의 수동 visual/accessibility review를 대체하지는 않습니다.</p>
   </div>
