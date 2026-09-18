@@ -1,0 +1,2237 @@
+{
+  "version": "2.0.0-alpha.1",
+  "generatedAtBuild": true,
+  "domains": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "slug": "/getting-started",
+      "overview": {
+        "id": "getting-started.overview",
+        "kind": "overview",
+        "domain": "getting-started",
+        "slug": "/getting-started",
+        "title": "Getting Started",
+        "status": "migration-ready",
+        "sources": [
+          "DESIGN.md",
+          "docs/principles.md",
+          "README.md"
+        ],
+        "description": "WBDS의 원칙, 운영 기준, 접근성, 성숙도와 도입 방법을 이해하기 위한 시작점입니다.",
+        "aliases": [
+          "home",
+          "start",
+          "overview",
+          "getting started"
+        ],
+        "legacyHrefs": [
+          "/wbeen-design-system/"
+        ],
+        "availableHref": "/wbeen-design-system/getting-started/"
+      },
+      "children": [
+        {
+          "id": "getting-started.principles",
+          "kind": "guide",
+          "domain": "getting-started",
+          "slug": "/getting-started/principles",
+          "title": "Principles",
+          "status": "migration-ready",
+          "sources": [
+            "docs/principles.md",
+            "DESIGN.md"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "getting-started.license",
+          "kind": "governance",
+          "domain": "getting-started",
+          "slug": "/getting-started/license",
+          "title": "License",
+          "status": "planned",
+          "sources": [
+            "README.md"
+          ],
+          "note": "Actual LICENSE source must exist before this page is marked complete.",
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "getting-started.how-to-build",
+          "kind": "governance",
+          "domain": "getting-started",
+          "slug": "/getting-started/how-to-build",
+          "title": "How to build Design System",
+          "status": "migration-ready",
+          "sources": [
+            "docs/how-to-build-design-system.md",
+            "docs/docs-site-architecture-v2-plan.md"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "getting-started.accessibility",
+          "kind": "guide",
+          "domain": "getting-started",
+          "slug": "/getting-started/accessibility",
+          "title": "Accessibility",
+          "status": "migration-ready",
+          "sources": [
+            "docs/accessibility.md",
+            "apps/site/docs/accessibility.html"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/accessibility.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/accessibility.html"
+        },
+        {
+          "id": "getting-started.anti-slop",
+          "kind": "guide",
+          "domain": "getting-started",
+          "slug": "/getting-started/anti-slop",
+          "title": "Anti-slop",
+          "status": "migration-ready",
+          "sources": [
+            "docs/anti-slop.md",
+            "docs/anti-slop-negative-examples.md",
+            "catalog/anti-slop-rules.json"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "getting-started.journey",
+          "kind": "governance",
+          "domain": "getting-started",
+          "slug": "/getting-started/journey",
+          "title": "Journey",
+          "status": "migration-ready",
+          "sources": [
+            "docs/journey.md",
+            "docs/project-ledger.md"
+          ],
+          "fixtures": [
+            "apps/site/fixtures/journey-foundation-alpha.html",
+            "apps/site/fixtures/visual-review.html"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/resources.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/resources.html"
+        },
+        {
+          "id": "getting-started.maturity",
+          "kind": "governance",
+          "domain": "getting-started",
+          "slug": "/getting-started/maturity",
+          "title": "Maturity & Changelog",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/maturity.json",
+            "catalog/checkpoint.json",
+            "docs/project-ledger.md"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/resources.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/resources.html"
+        },
+        {
+          "id": "getting-started.adoption",
+          "kind": "guide",
+          "domain": "getting-started",
+          "slug": "/getting-started/adoption",
+          "title": "Adoption & Contributing",
+          "status": "migration-ready",
+          "sources": [
+            "docs/adoption.md",
+            "docs/consumer-integration-v0.6.md",
+            "packages/wbds/README.md"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/resources.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/resources.html"
+        },
+        {
+          "id": "getting-started.references",
+          "kind": "reference",
+          "domain": "getting-started",
+          "slug": "/getting-started/references",
+          "title": "References",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/references.json",
+            "docs/reference-ledger.md",
+            "apps/site/docs/resources.html"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/resources.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/resources.html"
+        }
+      ]
+    },
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "slug": "/foundations",
+      "overview": {
+        "id": "foundations.overview",
+        "kind": "overview",
+        "domain": "foundations",
+        "slug": "/foundations",
+        "title": "Foundations",
+        "status": "migration-ready",
+        "sources": [
+          "docs/foundations.md",
+          "catalog/components.json",
+          "catalog/tokens.json"
+        ],
+        "description": "모든 디자인 요소의 기반이 되는 가장 원자적인 시각·동작 언어를 다룹니다.",
+        "aliases": [
+          "foundation",
+          "tokens",
+          "visual language"
+        ],
+        "legacyHrefs": [
+          "/wbeen-design-system/docs/foundations.html"
+        ],
+        "availableHref": "/wbeen-design-system/foundations/"
+      },
+      "children": [
+        {
+          "id": "foundations.color",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/color",
+          "title": "Color",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/tokens.json",
+            "docs/foundations.md",
+            "packages/wbds/tokens.css",
+            "packages/wbds/themes.css",
+            "docs/accessibility.md",
+            "docs/principles.md",
+            "scripts/validate-tokens.mjs"
+          ],
+          "description": "WBDS의 Neutral, Action, Signal, Critical 및 semantic state 색 역할을 Light A2와 Dark D1에서 일관된 토큰 계약으로 정의합니다.",
+          "docsState": "built",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/foundations/color/"
+        },
+        {
+          "id": "foundations.typography",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/typography",
+          "title": "Typography",
+          "status": "migration-ready",
+          "sources": [
+            "docs/foundations.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/foundations.html"
+        },
+        {
+          "id": "foundations.spacing",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/spacing",
+          "title": "Spacing",
+          "status": "planned",
+          "sources": [
+            "docs/foundations.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.grid-layout",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/grid-layout",
+          "title": "Grid & Layout",
+          "status": "planned",
+          "sources": [
+            "docs/foundations.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.density",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/density",
+          "title": "Density",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json",
+            "docs/foundations.md"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.shape-radius",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/shape-radius",
+          "title": "Shape & Radius",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/tokens.json",
+            "docs/foundations.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/foundations.html"
+        },
+        {
+          "id": "foundations.border-elevation",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/border-elevation",
+          "title": "Border & Elevation",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/tokens.json",
+            "docs/foundations.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/foundations.html"
+        },
+        {
+          "id": "foundations.theme",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/theme",
+          "title": "Theme",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/tokens.json",
+            "packages/wbds/themes.css",
+            "docs/foundations.md"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/foundations.html"
+        },
+        {
+          "id": "foundations.motion",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/motion",
+          "title": "Motion",
+          "status": "migration-ready",
+          "sources": [
+            "docs/foundations.md",
+            "packages/wbds/motion.css"
+          ],
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/foundations.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/foundations.html"
+        },
+        {
+          "id": "foundations.focus",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/focus",
+          "title": "Focus",
+          "status": "planned",
+          "sources": [
+            "docs/accessibility.md",
+            "packages/wbds/foundation.css"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.iconography",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/iconography",
+          "title": "Iconography",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json",
+            "docs/foundations.md"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.responsive",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/responsive",
+          "title": "Responsive",
+          "status": "planned",
+          "sources": [
+            "docs/accessibility.md",
+            "catalog/components.json"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        },
+        {
+          "id": "foundations.locale-content",
+          "kind": "foundation",
+          "domain": "foundations",
+          "slug": "/foundations/locale-content",
+          "title": "Locale & Content",
+          "status": "planned",
+          "sources": [
+            "docs/foundations.md",
+            "catalog/components.json"
+          ],
+          "legacyHrefs": [],
+          "availableHref": null
+        }
+      ]
+    },
+    {
+      "id": "components",
+      "title": "Components",
+      "slug": "/components",
+      "overview": {
+        "id": "components.overview",
+        "kind": "overview",
+        "domain": "components",
+        "slug": "/components",
+        "title": "Components",
+        "status": "migration-ready",
+        "sources": [
+          "catalog/components.json",
+          "docs/component-contracts.md",
+          "docs/component-inventory.md"
+        ],
+        "description": "사용자 인터페이스를 구성하는 재사용 가능한 독립 UI 단위를 분류하고 연결합니다.",
+        "aliases": [
+          "component",
+          "ui components",
+          "catalog"
+        ],
+        "legacyHrefs": [
+          "/wbeen-design-system/docs/components.html"
+        ],
+        "availableHref": "/wbeen-design-system/components/"
+      },
+      "children": [
+        {
+          "id": "components.actions",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/actions",
+          "title": "Actions",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "행동을 시작하거나 명령을 전달하는 컨트롤입니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.controls.button",
+              "sourceId": "button",
+              "kind": "component",
+              "domain": "components",
+              "category": "actions",
+              "title": "Button",
+              "slug": "/components/actions/button",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.icon-button",
+              "sourceId": "icon-button",
+              "kind": "component",
+              "domain": "components",
+              "category": "actions",
+              "title": "Icon Button",
+              "slug": "/components/actions/icon-button",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.link",
+              "sourceId": "link",
+              "kind": "component",
+              "domain": "components",
+              "category": "actions",
+              "title": "Link",
+              "slug": "/components/actions/link",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.selection-input",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/selection-input",
+          "title": "Selection & Input",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "값을 입력하고 선택하고 조정하는 인터랙션입니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.controls.text-field",
+              "sourceId": "text-field",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Text Field",
+              "slug": "/components/selection-input/text-field",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.text-area",
+              "sourceId": "text-area",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Text Area",
+              "slug": "/components/selection-input/text-area",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.checkbox",
+              "sourceId": "checkbox",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Checkbox",
+              "slug": "/components/selection-input/checkbox",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.radio",
+              "sourceId": "radio",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Radio",
+              "slug": "/components/selection-input/radio",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.switch",
+              "sourceId": "switch",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Switch",
+              "slug": "/components/selection-input/switch",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.select-combobox",
+              "sourceId": "select-combobox",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Select",
+              "slug": "/components/selection-input/select",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.search-input",
+              "sourceId": "search-input",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Search Input",
+              "slug": "/components/selection-input/search-input",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.tabs",
+              "sourceId": "tabs",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Tabs",
+              "slug": "/components/selection-input/tabs",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.segmented-control",
+              "sourceId": "segmented-control",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Segmented Control",
+              "slug": "/components/selection-input/segmented-control",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.slider",
+              "sourceId": "slider",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Slider",
+              "slug": "/components/selection-input/slider",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.stepper-number-input",
+              "sourceId": "stepper-number-input",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Stepper Number Input",
+              "slug": "/components/selection-input/stepper-number-input",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.date-time-input",
+              "sourceId": "date-time-input",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Date Time Input",
+              "slug": "/components/selection-input/date-time-input",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.file-upload",
+              "sourceId": "file-upload",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "File Upload",
+              "slug": "/components/selection-input/file-upload",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.controls.chip-tag-input",
+              "sourceId": "chip-tag-input",
+              "kind": "component",
+              "domain": "components",
+              "category": "selection-input",
+              "title": "Chip Tag Input",
+              "slug": "/components/selection-input/chip-tag-input",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.feedback-status",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/feedback-status",
+          "title": "Feedback & Status",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "상태, 진행, 결과와 복구 가능성을 전달합니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.feedback.inline-message",
+              "sourceId": "inline-message",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Inline Message",
+              "slug": "/components/feedback-status/inline-message",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.banner",
+              "sourceId": "banner",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Banner",
+              "slug": "/components/feedback-status/banner",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.status",
+              "sourceId": "status",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Status",
+              "slug": "/components/feedback-status/status",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.badge-restricted",
+              "sourceId": "badge-restricted",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Badge",
+              "slug": "/components/feedback-status/badge",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.toast-snackbar",
+              "sourceId": "toast-snackbar",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Toast / Snackbar",
+              "slug": "/components/feedback-status/toast-snackbar",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.tooltip",
+              "sourceId": "tooltip",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Tooltip",
+              "slug": "/components/feedback-status/tooltip",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.progress",
+              "sourceId": "progress",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Progress",
+              "slug": "/components/feedback-status/progress",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.spinner",
+              "sourceId": "spinner",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Spinner",
+              "slug": "/components/feedback-status/spinner",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.skeleton",
+              "sourceId": "skeleton",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Skeleton",
+              "slug": "/components/feedback-status/skeleton",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.empty-state",
+              "sourceId": "empty-state",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Empty State",
+              "slug": "/components/feedback-status/empty-state",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.error-state",
+              "sourceId": "error-state",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Error State",
+              "slug": "/components/feedback-status/error-state",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.unavailable-state",
+              "sourceId": "unavailable-state",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Unavailable State",
+              "slug": "/components/feedback-status/unavailable-state",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.feedback.partial-degraded-state",
+              "sourceId": "partial-degraded-state",
+              "kind": "component",
+              "domain": "components",
+              "category": "feedback-status",
+              "title": "Partial Degraded State",
+              "slug": "/components/feedback-status/partial-degraded-state",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.navigation",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/navigation",
+          "title": "Navigation",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "사용자가 위치를 이해하고 다른 목적지로 이동하도록 돕습니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.navigation.top-navigation",
+              "sourceId": "top-navigation",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Top Navigation",
+              "slug": "/components/navigation/top-navigation",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.side-navigation",
+              "sourceId": "side-navigation",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Side Navigation",
+              "slug": "/components/navigation/side-navigation",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.bottom-navigation",
+              "sourceId": "bottom-navigation",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Bottom Navigation",
+              "slug": "/components/navigation/bottom-navigation",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.breadcrumb",
+              "sourceId": "breadcrumb",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Breadcrumb",
+              "slug": "/components/navigation/breadcrumb",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.pagination",
+              "sourceId": "pagination",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Pagination",
+              "slug": "/components/navigation/pagination",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.page-indicator",
+              "sourceId": "page-indicator",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Page Indicator",
+              "slug": "/components/navigation/page-indicator",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.step-navigation",
+              "sourceId": "step-navigation",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Step Navigation",
+              "slug": "/components/navigation/step-navigation",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.navigation.section-navigation",
+              "sourceId": "section-navigation",
+              "kind": "component",
+              "domain": "components",
+              "category": "navigation",
+              "title": "Section Navigation",
+              "slug": "/components/navigation/section-navigation",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.content-data",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/content-data",
+          "title": "Content & Data",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "콘텐츠와 구조화된 데이터를 읽고 비교하는 단위입니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.contentData.avatar-profile",
+              "sourceId": "avatar-profile",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Avatar Profile",
+              "slug": "/components/content-data/avatar-profile",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.list",
+              "sourceId": "list",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "List",
+              "slug": "/components/content-data/list",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.list-row",
+              "sourceId": "list-row",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "List Row",
+              "slug": "/components/content-data/list-row",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.list-header",
+              "sourceId": "list-header",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "List Header",
+              "slug": "/components/content-data/list-header",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.definition-list-key-value",
+              "sourceId": "definition-list-key-value",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Definition List Key Value",
+              "slug": "/components/content-data/definition-list-key-value",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.table",
+              "sourceId": "table",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Table",
+              "slug": "/components/content-data/table",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.data-grid-deferred",
+              "sourceId": "data-grid-deferred",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Data Grid",
+              "slug": "/components/content-data/data-grid",
+              "status": "deferred",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.image",
+              "sourceId": "image",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Image",
+              "slug": "/components/content-data/image",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.image-grid-media",
+              "sourceId": "image-grid-media",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Image Grid Media",
+              "slug": "/components/content-data/image-grid-media",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.code-terminal-surface",
+              "sourceId": "code-terminal-surface",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Code Terminal Surface",
+              "slug": "/components/content-data/code-terminal-surface",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.divider-rule",
+              "sourceId": "divider-rule",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Divider Rule",
+              "slug": "/components/content-data/divider-rule",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.contentData.card-restricted",
+              "sourceId": "card-restricted",
+              "kind": "component",
+              "domain": "components",
+              "category": "content-data",
+              "title": "Card",
+              "slug": "/components/content-data/card",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.disclosure-overlay",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/disclosure-overlay",
+          "title": "Disclosure & Overlay",
+          "status": "planned",
+          "sources": [
+            "catalog/components.json"
+          ],
+          "description": "추가 정보와 일시적인 작업 표면을 필요할 때 드러냅니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/components.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/components.html",
+          "children": [
+            {
+              "id": "generated.overlayDisclosure.disclosure-accordion",
+              "sourceId": "disclosure-accordion",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Disclosure Accordion",
+              "slug": "/components/disclosure-overlay/disclosure-accordion",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.overlayDisclosure.dialog-popup",
+              "sourceId": "dialog-popup",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Dialog Popup",
+              "slug": "/components/disclosure-overlay/dialog-popup",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.overlayDisclosure.drawer-bottom-sheet",
+              "sourceId": "drawer-bottom-sheet",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Drawer Bottom Sheet",
+              "slug": "/components/disclosure-overlay/drawer-bottom-sheet",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.overlayDisclosure.popover",
+              "sourceId": "popover",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Popover",
+              "slug": "/components/disclosure-overlay/popover",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.overlayDisclosure.menu-pulldown",
+              "sourceId": "menu-pulldown",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Menu Pulldown",
+              "slug": "/components/disclosure-overlay/menu-pulldown",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.overlayDisclosure.tooltip",
+              "sourceId": "tooltip",
+              "kind": "component",
+              "domain": "components",
+              "category": "disclosure-overlay",
+              "title": "Tooltip",
+              "slug": "/components/disclosure-overlay/tooltip",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/components.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.ai-agentic",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/ai-agentic",
+          "title": "AI & Agentic",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/components.json",
+            "catalog/ai-states.json",
+            "docs/ai-interface-contract.md",
+            "packages/wbds/ai.css",
+            "packages/wbds/ai-extended.css"
+          ],
+          "description": "AI 작업, 증거, 승인, 산출물과 에이전트 상태를 명시적으로 다룹니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/ai-agentic.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/ai-agentic.html",
+          "children": [
+            {
+              "id": "components.ai-runtime-trust",
+              "kind": "guide",
+              "domain": "components",
+              "slug": "/components/ai-agentic/runtime-trust",
+              "title": "Runtime & Trust",
+              "status": "migration-ready",
+              "sources": [
+                "catalog/ai-states.json",
+                "docs/ai-interface-contract.md"
+              ],
+              "fixtures": [
+                "apps/site/fixtures/ai-state-matrix.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/ai-agentic.html"
+            },
+            {
+              "id": "components.ai-presence",
+              "kind": "component",
+              "domain": "components",
+              "slug": "/components/ai-agentic/presence",
+              "title": "Presence",
+              "status": "migration-ready",
+              "sources": [
+                "packages/wbds/presence-pair.js",
+                "packages/wbds/presence-pair.css",
+                "apps/site/docs/presence.html"
+              ],
+              "fixtures": [
+                "apps/site/fixtures/presence-mark-v1.html",
+                "apps/site/fixtures/presence-motion-v1.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/presence.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/presence.html"
+            },
+            {
+              "id": "generated.ai.ai-content-label",
+              "sourceId": "ai-content-label",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "AI Content Label",
+              "slug": "/components/ai-agentic/ai-content-label",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.source-citation",
+              "sourceId": "source-citation",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Source Citation",
+              "slug": "/components/ai-agentic/source-citation",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.evidence-list",
+              "sourceId": "evidence-list",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Evidence List",
+              "slug": "/components/ai-agentic/evidence-list",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.uncertainty",
+              "sourceId": "uncertainty",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Uncertainty",
+              "slug": "/components/ai-agentic/uncertainty",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.unsupported",
+              "sourceId": "unsupported",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Unsupported",
+              "slug": "/components/ai-agentic/unsupported",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.unknown",
+              "sourceId": "unknown",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Unknown",
+              "slug": "/components/ai-agentic/unknown",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.review-required",
+              "sourceId": "review-required",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Review Required",
+              "slug": "/components/ai-agentic/review-required",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.human-approval-gate",
+              "sourceId": "human-approval-gate",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Human Approval Gate",
+              "slug": "/components/ai-agentic/human-approval-gate",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.prompt-composer",
+              "sourceId": "prompt-composer",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Prompt Composer",
+              "slug": "/components/ai-agentic/prompt-composer",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.context-attachment",
+              "sourceId": "context-attachment",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Context Attachment",
+              "slug": "/components/ai-agentic/context-attachment",
+              "status": "planned",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.context-chip",
+              "sourceId": "context-chip",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Context Chip",
+              "slug": "/components/ai-agentic/context-chip",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.conversation",
+              "sourceId": "conversation",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Conversation",
+              "slug": "/components/ai-agentic/conversation",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.message",
+              "sourceId": "message",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Message",
+              "slug": "/components/ai-agentic/message",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.ai-response",
+              "sourceId": "ai-response",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "AI Response",
+              "slug": "/components/ai-agentic/ai-response",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.streaming-response",
+              "sourceId": "streaming-response",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Streaming Response",
+              "slug": "/components/ai-agentic/streaming-response",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.partial-result",
+              "sourceId": "partial-result",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Partial Result",
+              "slug": "/components/ai-agentic/partial-result",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.artifact-preview",
+              "sourceId": "artifact-preview",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Artifact Preview",
+              "slug": "/components/ai-agentic/artifact-preview",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.diff-review",
+              "sourceId": "diff-review",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Diff Review",
+              "slug": "/components/ai-agentic/diff-review",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.tool-invocation",
+              "sourceId": "tool-invocation",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Tool Invocation",
+              "slug": "/components/ai-agentic/tool-invocation",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.tool-result",
+              "sourceId": "tool-result",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Tool Result",
+              "slug": "/components/ai-agentic/tool-result",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.retry-resume-cancel",
+              "sourceId": "retry-resume-cancel",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Retry Resume Cancel",
+              "slug": "/components/ai-agentic/retry-resume-cancel",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.agent-action-timeline",
+              "sourceId": "agent-action-timeline",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Agent Action Timeline",
+              "slug": "/components/ai-agentic/agent-action-timeline",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.ai.handoff",
+              "sourceId": "handoff",
+              "kind": "component",
+              "domain": "components",
+              "category": "ai-agentic",
+              "title": "Handoff",
+              "slug": "/components/ai-agentic/handoff",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/ai-agentic.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        },
+        {
+          "id": "components.patterns",
+          "kind": "overview",
+          "domain": "components",
+          "slug": "/components/patterns",
+          "title": "Patterns",
+          "status": "migration-ready",
+          "sources": [
+            "catalog/components.json",
+            "packages/wbds/patterns.css",
+            "packages/wbds/patterns-extended.css",
+            "apps/site/docs/patterns.html"
+          ],
+          "description": "여러 컴포넌트를 반복 가능한 작업 구조로 조합하는 패턴입니다.",
+          "legacyHrefs": [
+            "/wbeen-design-system/docs/patterns.html"
+          ],
+          "availableHref": "/wbeen-design-system/docs/patterns.html",
+          "children": [
+            {
+              "id": "components.patterns.workbench",
+              "kind": "pattern",
+              "domain": "components",
+              "slug": "/components/patterns/workbench",
+              "title": "Workbench",
+              "status": "migration-ready",
+              "sources": [
+                "packages/wbds/patterns.css",
+                "apps/site/docs/patterns.html"
+              ],
+              "fixtures": [
+                "apps/site/fixtures/workbench.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/patterns.html"
+            },
+            {
+              "id": "components.patterns.editorial",
+              "kind": "pattern",
+              "domain": "components",
+              "slug": "/components/patterns/editorial",
+              "title": "Editorial",
+              "status": "migration-ready",
+              "sources": [
+                "apps/site/docs/patterns.html"
+              ],
+              "fixtures": [
+                "apps/site/fixtures/editorial.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/patterns.html"
+            },
+            {
+              "id": "components.patterns.utility",
+              "kind": "pattern",
+              "domain": "components",
+              "slug": "/components/patterns/utility",
+              "title": "Utility",
+              "status": "migration-ready",
+              "sources": [
+                "packages/wbds/patterns.css",
+                "apps/site/docs/patterns.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/patterns.html"
+            },
+            {
+              "id": "components.patterns.ai",
+              "kind": "pattern",
+              "domain": "components",
+              "slug": "/components/patterns/ai",
+              "title": "AI Composition",
+              "status": "migration-ready",
+              "sources": [
+                "packages/wbds/patterns.css",
+                "packages/wbds/ai.css",
+                "apps/site/docs/patterns.html"
+              ],
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": "/wbeen-design-system/docs/patterns.html"
+            },
+            {
+              "id": "generated.patterns.page-header",
+              "sourceId": "page-header",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Page Header",
+              "slug": "/components/patterns/page-header",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.workbench-header",
+              "sourceId": "workbench-header",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Workbench Header",
+              "slug": "/components/patterns/workbench-header",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.context-strip",
+              "sourceId": "context-strip",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Context Strip",
+              "slug": "/components/patterns/context-strip",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.filter-bar",
+              "sourceId": "filter-bar",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Filter Bar",
+              "slug": "/components/patterns/filter-bar",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.search-results",
+              "sourceId": "search-results",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Search Results",
+              "slug": "/components/patterns/search-results",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.decision-list-row",
+              "sourceId": "decision-list-row",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Decision List Row",
+              "slug": "/components/patterns/decision-list-row",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.master-detail",
+              "sourceId": "master-detail",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Master Detail",
+              "slug": "/components/patterns/master-detail",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.decision-panel",
+              "sourceId": "decision-panel",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Decision Panel",
+              "slug": "/components/patterns/decision-panel",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.evidence-disclosure",
+              "sourceId": "evidence-disclosure",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Evidence Disclosure",
+              "slug": "/components/patterns/evidence-disclosure",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.form-section",
+              "sourceId": "form-section",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Form Section",
+              "slug": "/components/patterns/form-section",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.review-panel",
+              "sourceId": "review-panel",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Review Panel",
+              "slug": "/components/patterns/review-panel",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.change-timeline",
+              "sourceId": "change-timeline",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Change Timeline",
+              "slug": "/components/patterns/change-timeline",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.approval-footer",
+              "sourceId": "approval-footer",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Approval Footer",
+              "slug": "/components/patterns/approval-footer",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.task-side-panel",
+              "sourceId": "task-side-panel",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Task Side Panel",
+              "slug": "/components/patterns/task-side-panel",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.command-bar",
+              "sourceId": "command-bar",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Command Bar",
+              "slug": "/components/patterns/command-bar",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            },
+            {
+              "id": "generated.patterns.empty-error-recovery",
+              "sourceId": "empty-error-recovery",
+              "kind": "pattern",
+              "domain": "components",
+              "category": "patterns",
+              "title": "Empty Error Recovery",
+              "slug": "/components/patterns/empty-error-recovery",
+              "status": "migration-ready",
+              "generated": true,
+              "legacyHrefs": [
+                "/wbeen-design-system/docs/patterns.html"
+              ],
+              "availableHref": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "Utilities",
+      "slug": "/utilities",
+      "overview": {
+        "id": "utilities.overview",
+        "kind": "overview",
+        "domain": "utilities",
+        "slug": "/utilities",
+        "title": "Utilities",
+        "status": "audit-pending",
+        "sources": [
+          "packages/wbds/",
+          "apps/site/app.js"
+        ],
+        "note": "Publish child pages only after CP18 confirms a reusable helper/runtime contract in source.",
+        "description": "디자인 시스템 전반에서 반복적으로 쓰이는 보조 기능과 스타일링 도구를 다룹니다. 실제 재사용 계약이 확인된 항목만 문서화합니다.",
+        "aliases": [
+          "utility",
+          "helpers"
+        ],
+        "legacyHrefs": [],
+        "availableHref": "/wbeen-design-system/utilities/"
+      },
+      "children": []
+    }
+  ],
+  "legacyRoutes": [
+    {
+      "from": "/wbeen-design-system/",
+      "mode": "move",
+      "to": [
+        "getting-started.overview"
+      ]
+    },
+    {
+      "from": "/wbeen-design-system/docs/foundations.html",
+      "mode": "split",
+      "to": [
+        "foundations.overview",
+        "foundations.color",
+        "foundations.typography",
+        "foundations.shape-radius",
+        "foundations.border-elevation",
+        "foundations.theme",
+        "foundations.motion"
+      ]
+    },
+    {
+      "from": "/wbeen-design-system/docs/components.html",
+      "mode": "split",
+      "to": [
+        "components.overview",
+        "components.actions",
+        "components.selection-input",
+        "components.feedback-status",
+        "components.navigation",
+        "components.content-data",
+        "components.disclosure-overlay"
+      ],
+      "note": "Leaf routes are generated from catalog/components.json."
+    },
+    {
+      "from": "/wbeen-design-system/docs/patterns.html",
+      "mode": "split",
+      "to": [
+        "components.patterns",
+        "components.patterns.workbench",
+        "components.patterns.editorial",
+        "components.patterns.utility",
+        "components.patterns.ai"
+      ]
+    },
+    {
+      "from": "/wbeen-design-system/docs/ai-agentic.html",
+      "mode": "split",
+      "to": [
+        "components.ai-agentic",
+        "components.ai-runtime-trust"
+      ],
+      "note": "AI leaf routes are generated from catalog/components.json."
+    },
+    {
+      "from": "/wbeen-design-system/docs/presence.html",
+      "mode": "move",
+      "to": [
+        "components.ai-presence"
+      ]
+    },
+    {
+      "from": "/wbeen-design-system/docs/accessibility.html",
+      "mode": "move",
+      "to": [
+        "getting-started.accessibility"
+      ]
+    },
+    {
+      "from": "/wbeen-design-system/docs/resources.html",
+      "mode": "split",
+      "to": [
+        "getting-started.adoption",
+        "getting-started.maturity",
+        "getting-started.references",
+        "getting-started.journey"
+      ]
+    }
+  ]
+}

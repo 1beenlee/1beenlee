@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="ko" data-wb-motion="full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="WBDS의 Neutral, Action, Signal, Critical 및 semantic state 색 역할을 Light A2와 Dark D1에서 일관된 토큰 계약으로 정의합니다." />
+  <title>Color · WBDS</title>
+  <link rel="stylesheet" href="/wbeen-design-system/wbds.css" />
+  <link rel="stylesheet" href="/wbeen-design-system/site.css" />
+  <script>try{const s=localStorage.getItem('wbds-theme');const e=s==='light'||s==='dark';const m=window.matchMedia?.('(prefers-color-scheme: dark)');const t=e?s:(m?(m.matches?'dark':'light'):'dark');document.documentElement.dataset.wbTheme=t;document.documentElement.dataset.wbThemeSource=e?'user':'system';}catch{document.documentElement.dataset.wbTheme='dark';document.documentElement.dataset.wbThemeSource='system';}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  
+<header
+  class="docs-global-header wbds-page"
+  data-site-header
+  data-docs-shell
+  data-docs-path="/foundations/color/"
+  data-docs-manifest="/wbeen-design-system/docs-content.json"
+  data-docs-navigation="/wbeen-design-system/docs-navigation.json"
+  data-docs-default-locale="ko"
+  data-docs-fallback-locale="en"
+  data-docs-page-locales="ko"
+>
+  <a class="docs-global-brand" href="/wbeen-design-system/getting-started/" aria-label="WBDS home">
+    <strong>WBDS</strong>
+    <span>Quiet Instrument</span>
+  </a>
+
+  <div class="docs-global-actions" role="group" aria-label="Documentation controls">
+    <button
+      class="docs-global-action docs-global-search"
+      type="button"
+      data-docs-search-trigger
+      aria-label="Search documentation"
+      title="Search · Ctrl/⌘ K"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6"></circle>
+        <path d="m16 16 4 4"></path>
+      </svg>
+      <span class="docs-global-action__label">Search</span>
+      <kbd>⌘K</kbd>
+    </button>
+
+    <button
+      class="docs-global-action"
+      type="button"
+      data-docs-theme-toggle
+      aria-label="Toggle color theme"
+      title="Toggle color theme"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"></path>
+      </svg>
+      <span class="wbds-sr-only">Theme</span>
+    </button>
+
+    <button
+      class="docs-global-action docs-global-locale"
+      type="button"
+      data-docs-locale-toggle
+      data-docs-locale="ko"
+      aria-label="Language: 한국어. Change language"
+      title="Language · 한국어"
+    >
+      <span aria-hidden="true">KO</span>
+    </button>
+
+    <button
+      class="docs-global-action"
+      type="button"
+      data-docs-menu-trigger
+      aria-label="Open documentation menu"
+      aria-controls="docs-global-menu"
+      aria-expanded="false"
+      title="Menu"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16"></path>
+      </svg>
+      <span class="wbds-sr-only">Menu</span>
+    </button>
+    <span class="wbds-sr-only" data-docs-locale-status aria-live="polite"></span>
+  </div>
+</header>
+<dialog class="docs-global-menu" id="docs-global-menu" data-docs-menu aria-labelledby="docs-global-menu-title">
+  <div class="docs-global-menu__frame">
+    <header class="docs-global-menu__header">
+      <div>
+        <span class="wbds-meta">WBDS DOCUMENTATION</span>
+        <h2 id="docs-global-menu-title">Browse the system</h2>
+      </div>
+      <button class="docs-global-action" type="button" data-docs-menu-close aria-label="Close documentation menu" title="Close menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+    </header>
+    <nav class="docs-global-menu__nav" data-docs-menu-nav aria-label="Documentation"></nav>
+    <p class="docs-global-menu__status wbds-meta" data-docs-menu-status aria-live="polite">Navigation loads from the WBDS Docs manifest.</p>
+  </div>
+</dialog>
+<dialog class="docs-global-search-dialog" id="docs-global-search" data-docs-search aria-labelledby="docs-global-search-title">
+  <div class="docs-global-search-dialog__frame">
+    <header class="docs-global-search-dialog__header">
+      <div>
+        <span class="wbds-meta">WBDS SEARCH</span>
+        <h2 id="docs-global-search-title">Find documentation</h2>
+      </div>
+      <button class="docs-global-action" type="button" data-docs-search-close aria-label="Close documentation search" title="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+    </header>
+    <label class="docs-global-search-dialog__field">
+      <span class="wbds-sr-only">Search documentation</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+      <input type="search" autocomplete="off" spellcheck="false" data-docs-search-input aria-controls="docs-global-search-results" placeholder="Search pages, categories, and components" />
+      <kbd>Esc</kbd>
+    </label>
+    <div class="docs-global-search-dialog__results" id="docs-global-search-results" data-docs-search-results role="listbox" aria-label="Documentation search results"></div>
+    <p class="docs-global-search-dialog__status wbds-meta" data-docs-search-status aria-live="polite">Type to search the WBDS documentation hierarchy.</p>
+  </div>
+</dialog>
+  <main class="wbds-page docs-detail" id="main-content" data-docs-detail="foundations.color">
+    <nav class="docs-detail-breadcrumb" aria-label="Breadcrumb">
+      <a href="/wbeen-design-system/getting-started/">Docs</a><span aria-hidden="true">/</span><a href="/wbeen-design-system/foundations/">Foundations</a><span aria-hidden="true">/</span><span aria-current="page">Color</span>
+    </nav>
+
+    <header class="docs-detail-hero">
+      <div>
+        <span class="wbds-meta">Foundations</span>
+        <h1>Color</h1>
+        <p>WBDS의 Neutral, Action, Signal, Critical 및 semantic state 색 역할을 Light A2와 Dark D1에서 일관된 토큰 계약으로 정의합니다.</p>
+      </div>
+      
+    <dl class="docs-detail-meta">
+      
+        <div>
+          <dt>Maturity</dt>
+          <dd>Approved alpha</dd>
+        </div>
+        <div>
+          <dt>Light</dt>
+          <dd>A2 · aged paper</dd>
+        </div>
+        <div>
+          <dt>Signal</dt>
+          <dd>S1 · Warm Sakura</dd>
+        </div>
+        <div>
+          <dt>Dark</dt>
+          <dd>D1 · Moonlit Desert Midnight</dd>
+        </div>
+    </dl>
+    </header>
+
+    
+    <figure
+      class="docs-specimen-frame"
+      data-docs-specimen="color-live-semantic-palette"
+      data-specimen-align="stretch"
+      data-specimen-density="comfortable"
+      data-specimen-theme="inherit"
+    >
+      <figcaption class="docs-specimen-frame__head">
+        <div>
+          <span class="wbds-meta">Live semantic specimen</span>
+          <p>이 swatch들은 현재 활성화된 WBDS semantic CSS token을 그대로 사용합니다. 상단 Theme control로 Light/Dark mapping을 전환해 확인할 수 있습니다.</p>
+        </div>
+        
+    <div class="docs-specimen-frame__axes" aria-label="Specimen controls">
+      
+        <div class="docs-specimen-axis" data-specimen-axis="theme">
+          <span>Theme</span>
+          <strong>Global toggle</strong>
+        </div>
+    </div>
+      </figcaption>
+      <div class="docs-specimen-frame__stage">
+        <div class="docs-specimen-frame__content">
+          
+  <div class="docs-color-live-palette" aria-label="Current semantic color specimen">
+    <div style="--docs-live-color:var(--wb-color-canvas)"><span>Canvas</span><code>--wb-color-canvas</code></div>
+    <div style="--docs-live-color:var(--wb-color-text)"><span>Text</span><code>--wb-color-text</code></div>
+    <div style="--docs-live-color:var(--wb-color-action)"><span>Action</span><code>--wb-color-action</code></div>
+    <div style="--docs-live-color:var(--wb-color-signal-strong)"><span>Signal</span><code>--wb-color-signal-strong</code></div>
+    <div style="--docs-live-color:var(--wb-color-critical)"><span>Critical</span><code>--wb-color-critical</code></div>
+  </div>
+        </div>
+      </div>
+    </figure>
+
+    <div class="docs-detail-layout">
+      <article class="docs-detail-content">
+        
+  <section class="docs-detail-section" id="anatomy" data-detail-section="anatomy">
+    <div class="docs-detail-section__head">
+      <h2>Semantic architecture</h2>
+      <p>WBDS는 raw value보다 semantic role을 먼저 정의하고, 그 역할을 theme별 실제 값으로 resolve합니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <div class="docs-color-role-list">
+    <article><strong>1. Neutral</strong><p>Canvas, Surface, Text, Border가 읽기와 containment의 기본층을 구성합니다.</p></article>
+    <article><strong>2. Action</strong><p>절제된 olive 계열이 다음으로 중요한 결정이나 행동을 담당합니다.</p></article>
+    <article><strong>3. Signal</strong><p>Warm Sakura는 review, noteworthy, evidence, editorial emphasis처럼 드물게 강조가 필요한 순간에만 사용합니다.</p></article>
+    <article><strong>4. Critical</strong><p>Destructive, revoke, prohibited, severe-error 의미는 Signal과 분리합니다.</p></article>
+    <article><strong>5. Other semantic states</strong><p>Positive, Caution, Info, Focus와 관련 soft surface는 각각 독립된 semantic role로 유지합니다.</p></article>
+  </div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="variants" data-detail-section="variants">
+    <div class="docs-detail-section__head">
+      <h2>Light &amp; Dark</h2>
+      <p>A2 aged paper와 D1 Moonlit Desert Midnight는 같은 semantic role system을 서로 다른 theme 값으로 매핑합니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      <div class="docs-color-theme-pair">
+  <section class="docs-color-theme">
+    <header>
+      <strong>Light A2</strong>
+      <span>Aged paper</span>
+    </header>
+    <div class="docs-color-theme__grid">
+      
+  <div class="docs-color-token" data-color-token="canvas">
+    <span class="docs-color-token__chip" style="--docs-color-value:#f4eee6" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Canvas</span>
+    <code>#f4eee6</code>
+  </div>
+  <div class="docs-color-token" data-color-token="surface">
+    <span class="docs-color-token__chip" style="--docs-color-value:#fbf7f1" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Surface</span>
+    <code>#fbf7f1</code>
+  </div>
+  <div class="docs-color-token" data-color-token="surfaceMuted">
+    <span class="docs-color-token__chip" style="--docs-color-value:#efe5d8" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Surface Muted</span>
+    <code>#efe5d8</code>
+  </div>
+  <div class="docs-color-token" data-color-token="text">
+    <span class="docs-color-token__chip" style="--docs-color-value:#231f1a" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Text</span>
+    <code>#231f1a</code>
+  </div>
+  <div class="docs-color-token" data-color-token="textMuted">
+    <span class="docs-color-token__chip" style="--docs-color-value:#685e54" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Text Muted</span>
+    <code>#685e54</code>
+  </div>
+  <div class="docs-color-token" data-color-token="border">
+    <span class="docs-color-token__chip" style="--docs-color-value:#d4c5b4" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Border</span>
+    <code>#d4c5b4</code>
+  </div>
+  <div class="docs-color-token" data-color-token="action">
+    <span class="docs-color-token__chip" style="--docs-color-value:#566247" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Action</span>
+    <code>#566247</code>
+  </div>
+  <div class="docs-color-token" data-color-token="signalStrong">
+    <span class="docs-color-token__chip" style="--docs-color-value:#9f5660" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Signal Strong</span>
+    <code>#9f5660</code>
+  </div>
+  <div class="docs-color-token" data-color-token="critical">
+    <span class="docs-color-token__chip" style="--docs-color-value:#a94431" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Critical</span>
+    <code>#a94431</code>
+  </div>
+  <div class="docs-color-token" data-color-token="positive">
+    <span class="docs-color-token__chip" style="--docs-color-value:#446845" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Positive</span>
+    <code>#446845</code>
+  </div>
+  <div class="docs-color-token" data-color-token="caution">
+    <span class="docs-color-token__chip" style="--docs-color-value:#7d571d" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Caution</span>
+    <code>#7d571d</code>
+  </div>
+  <div class="docs-color-token" data-color-token="info">
+    <span class="docs-color-token__chip" style="--docs-color-value:#3e6076" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Info</span>
+    <code>#3e6076</code>
+  </div>
+    </div>
+  </section>
+  <section class="docs-color-theme">
+    <header>
+      <strong>Dark D1</strong>
+      <span>Moonlit Desert Midnight</span>
+    </header>
+    <div class="docs-color-theme__grid">
+      
+  <div class="docs-color-token" data-color-token="canvas">
+    <span class="docs-color-token__chip" style="--docs-color-value:#111723" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Canvas</span>
+    <code>#111723</code>
+  </div>
+  <div class="docs-color-token" data-color-token="surface">
+    <span class="docs-color-token__chip" style="--docs-color-value:#182132" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Surface</span>
+    <code>#182132</code>
+  </div>
+  <div class="docs-color-token" data-color-token="surfaceMuted">
+    <span class="docs-color-token__chip" style="--docs-color-value:#202a3f" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Surface Muted</span>
+    <code>#202a3f</code>
+  </div>
+  <div class="docs-color-token" data-color-token="text">
+    <span class="docs-color-token__chip" style="--docs-color-value:#f6f0e8" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Text</span>
+    <code>#f6f0e8</code>
+  </div>
+  <div class="docs-color-token" data-color-token="textMuted">
+    <span class="docs-color-token__chip" style="--docs-color-value:#c4bcaf" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Text Muted</span>
+    <code>#c4bcaf</code>
+  </div>
+  <div class="docs-color-token" data-color-token="border">
+    <span class="docs-color-token__chip" style="--docs-color-value:#334055" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Border</span>
+    <code>#334055</code>
+  </div>
+  <div class="docs-color-token" data-color-token="action">
+    <span class="docs-color-token__chip" style="--docs-color-value:#7d8968" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Action</span>
+    <code>#7d8968</code>
+  </div>
+  <div class="docs-color-token" data-color-token="signalStrong">
+    <span class="docs-color-token__chip" style="--docs-color-value:#c1717f" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Signal Strong</span>
+    <code>#c1717f</code>
+  </div>
+  <div class="docs-color-token" data-color-token="critical">
+    <span class="docs-color-token__chip" style="--docs-color-value:#d67864" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Critical</span>
+    <code>#d67864</code>
+  </div>
+  <div class="docs-color-token" data-color-token="positive">
+    <span class="docs-color-token__chip" style="--docs-color-value:#7ca17c" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Positive</span>
+    <code>#7ca17c</code>
+  </div>
+  <div class="docs-color-token" data-color-token="caution">
+    <span class="docs-color-token__chip" style="--docs-color-value:#c7a86e" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Caution</span>
+    <code>#c7a86e</code>
+  </div>
+  <div class="docs-color-token" data-color-token="info">
+    <span class="docs-color-token__chip" style="--docs-color-value:#85a6c7" aria-hidden="true"></span>
+    <span class="docs-color-token__name">Info</span>
+    <code>#85a6c7</code>
+  </div>
+    </div>
+  </section></div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="states" data-detail-section="states">
+    <div class="docs-detail-section__head">
+      <h2>Semantic states</h2>
+      <p>theme에 따라 시각 값이 달라져도 Action, Signal, Critical 및 다른 state의 의미는 서로 분리된 채 유지됩니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <div class="docs-color-state-grid">
+    <article data-color-state="action"><span aria-hidden="true"></span><strong>Action</strong><p>다음으로 중요한 결정이나 행동에 사용합니다. 가장 강한 대비를 화면 전체에 균등하게 뿌리지 않습니다.</p></article>
+    <article data-color-state="signal"><span aria-hidden="true"></span><strong>Signal</strong><p>Review, noteworthy, evidence, editorial emphasis에 사용합니다. Signal은 Positive도 아니고 destructive 의미도 아닙니다.</p></article>
+    <article data-color-state="critical"><span aria-hidden="true"></span><strong>Critical</strong><p>Destructive, revoke, prohibited, severe-error 의미에만 사용합니다.</p></article>
+    <article data-color-state="positive"><span aria-hidden="true"></span><strong>Positive</strong><p>Signal과 별개로 Positive semantic family를 유지합니다.</p></article>
+    <article data-color-state="caution"><span aria-hidden="true"></span><strong>Caution</strong><p>Critical과 별개로 Caution semantic family를 유지합니다.</p></article>
+    <article data-color-state="info"><span aria-hidden="true"></span><strong>Info</strong><p>정보 상태가 필요한 컴포넌트는 독립된 Info semantic family를 사용합니다.</p></article>
+    <article data-color-state="focus"><span aria-hidden="true"></span><strong>Focus</strong><p>Focus는 Action이나 Signal을 빌려 쓰지 않고 독립된 semantic color를 사용합니다.</p></article>
+  </div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="usage" data-detail-section="usage">
+    <div class="docs-detail-section__head">
+      <h2>Usage</h2>
+      <p>개별 hue 취향이 아니라 semantic role을 기준으로 색상을 선택하고 적용합니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <div class="docs-guidance-stack">
+    <article>
+      <h3>값보다 역할을 먼저 선택</h3>
+      <p>WBDS는 Neutral, Action, Signal, Critical 등 semantic purpose를 먼저 정한 뒤 theme별 실제 값으로 resolve합니다. 소비 제품은 이 페이지의 hex 값을 복사하지 말고 public semantic token에 의존해야 합니다.</p>
+    </article>
+    <article>
+      <h3>Signal은 의도적으로 드물게 사용</h3>
+      <p>Warm Sakura는 review, noteworthy, evidence, editorial moment를 표시합니다. 일반 accent처럼 남용하거나 success 의미로 재사용하지 않습니다.</p>
+    </article>
+    <article>
+      <h3>Dark는 inversion이 아니라 semantic remap</h3>
+      <p>D1 Moonlit Desert Midnight는 동일한 semantic role을 moonlit-blue 계열의 night palette로 다시 매핑합니다. Action은 Action, Signal은 Signal, Critical은 Critical로 의미가 유지됩니다.</p>
+    </article>
+    <article>
+      <h3>Theme ownership</h3>
+      <pre class="wbds-code-block" tabindex="0"><code>&lt;html data-wb-theme="light"&gt;
+&lt;html data-wb-theme="dark"&gt;
+&lt;html data-wb-theme="system"&gt;</code></pre>
+      <p>Foundation contract는 명시적인 Light, Dark, System mode를 지원합니다. preference 저장이나 제품별 adaptation은 소비 제품이 소유합니다.</p>
+    </article>
+  </div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="color-structure" data-detail-section="color-structure">
+    <div class="docs-detail-section__head">
+      <h2>Color structure</h2>
+      <p>하나의 public semantic token API가 Light와 Dark에서 서로 다른 실제 값으로 resolve됩니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <section class="docs-color-token-group">
+    <h3>Neutral</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Neutral color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Canvas</th>
+              <td><code>--wb-color-canvas</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f4eee6" aria-hidden="true"></i><code>#f4eee6</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#111723" aria-hidden="true"></i><code>#111723</code></span></td>
+            </tr><tr>
+              <th scope="row">Surface</th>
+              <td><code>--wb-color-surface</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#fbf7f1" aria-hidden="true"></i><code>#fbf7f1</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#182132" aria-hidden="true"></i><code>#182132</code></span></td>
+            </tr><tr>
+              <th scope="row">Surface Muted</th>
+              <td><code>--wb-color-surface-muted</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#efe5d8" aria-hidden="true"></i><code>#efe5d8</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#202a3f" aria-hidden="true"></i><code>#202a3f</code></span></td>
+            </tr><tr>
+              <th scope="row">Surface Strong</th>
+              <td><code>--wb-color-surface-strong</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#e5d7c6" aria-hidden="true"></i><code>#e5d7c6</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#29344c" aria-hidden="true"></i><code>#29344c</code></span></td>
+            </tr><tr>
+              <th scope="row">Text</th>
+              <td><code>--wb-color-text</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#231f1a" aria-hidden="true"></i><code>#231f1a</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f6f0e8" aria-hidden="true"></i><code>#f6f0e8</code></span></td>
+            </tr><tr>
+              <th scope="row">Text Muted</th>
+              <td><code>--wb-color-text-muted</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#685e54" aria-hidden="true"></i><code>#685e54</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#c4bcaf" aria-hidden="true"></i><code>#c4bcaf</code></span></td>
+            </tr><tr>
+              <th scope="row">Text Subtle</th>
+              <td><code>--wb-color-text-subtle</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#86796d" aria-hidden="true"></i><code>#86796d</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#9a958f" aria-hidden="true"></i><code>#9a958f</code></span></td>
+            </tr><tr>
+              <th scope="row">Border</th>
+              <td><code>--wb-color-border</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#d4c5b4" aria-hidden="true"></i><code>#d4c5b4</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#334055" aria-hidden="true"></i><code>#334055</code></span></td>
+            </tr><tr>
+              <th scope="row">Border Strong</th>
+              <td><code>--wb-color-border-strong</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#ad9b88" aria-hidden="true"></i><code>#ad9b88</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#495974" aria-hidden="true"></i><code>#495974</code></span></td>
+            </tr><tr>
+              <th scope="row">Selection</th>
+              <td><code>--wb-color-selection</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#ebe3d7" aria-hidden="true"></i><code>#ebe3d7</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#2a3447" aria-hidden="true"></i><code>#2a3447</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="docs-color-token-group">
+    <h3>Action</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Action color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Action</th>
+              <td><code>--wb-color-action</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#566247" aria-hidden="true"></i><code>#566247</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#7d8968" aria-hidden="true"></i><code>#7d8968</code></span></td>
+            </tr><tr>
+              <th scope="row">Action Hover</th>
+              <td><code>--wb-color-action-hover</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#49553d" aria-hidden="true"></i><code>#49553d</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#899674" aria-hidden="true"></i><code>#899674</code></span></td>
+            </tr><tr>
+              <th scope="row">Action Pressed</th>
+              <td><code>--wb-color-action-pressed</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#3e4834" aria-hidden="true"></i><code>#3e4834</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#778362" aria-hidden="true"></i><code>#778362</code></span></td>
+            </tr><tr>
+              <th scope="row">On Action</th>
+              <td><code>--wb-color-on-action</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#fffaf4" aria-hidden="true"></i><code>#fffaf4</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#10151f" aria-hidden="true"></i><code>#10151f</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="docs-color-token-group">
+    <h3>Signal</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Signal color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Signal</th>
+              <td><code>--wb-color-signal</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#c47a85" aria-hidden="true"></i><code>#c47a85</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#d1818e" aria-hidden="true"></i><code>#d1818e</code></span></td>
+            </tr><tr>
+              <th scope="row">Signal Strong</th>
+              <td><code>--wb-color-signal-strong</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#9f5660" aria-hidden="true"></i><code>#9f5660</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#c1717f" aria-hidden="true"></i><code>#c1717f</code></span></td>
+            </tr><tr>
+              <th scope="row">Signal Hover</th>
+              <td><code>--wb-color-signal-hover</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#8f4d59" aria-hidden="true"></i><code>#8f4d59</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#dc909c" aria-hidden="true"></i><code>#dc909c</code></span></td>
+            </tr><tr>
+              <th scope="row">Signal Pressed</th>
+              <td><code>--wb-color-signal-pressed</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#7c414c" aria-hidden="true"></i><code>#7c414c</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#b56673" aria-hidden="true"></i><code>#b56673</code></span></td>
+            </tr><tr>
+              <th scope="row">Signal Soft</th>
+              <td><code>--wb-color-signal-soft</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f3e6e8" aria-hidden="true"></i><code>#f3e6e8</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#342733" aria-hidden="true"></i><code>#342733</code></span></td>
+            </tr><tr>
+              <th scope="row">On Signal</th>
+              <td><code>--wb-color-on-signal</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#fffaf4" aria-hidden="true"></i><code>#fffaf4</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#16121a" aria-hidden="true"></i><code>#16121a</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="docs-color-token-group">
+    <h3>Critical</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Critical color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Critical</th>
+              <td><code>--wb-color-critical</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#a94431" aria-hidden="true"></i><code>#a94431</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#d67864" aria-hidden="true"></i><code>#d67864</code></span></td>
+            </tr><tr>
+              <th scope="row">Critical Hover</th>
+              <td><code>--wb-color-critical-hover</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#963925" aria-hidden="true"></i><code>#963925</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#e18877" aria-hidden="true"></i><code>#e18877</code></span></td>
+            </tr><tr>
+              <th scope="row">Critical Pressed</th>
+              <td><code>--wb-color-critical-pressed</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#7f2e1e" aria-hidden="true"></i><code>#7f2e1e</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#bd6554" aria-hidden="true"></i><code>#bd6554</code></span></td>
+            </tr><tr>
+              <th scope="row">Critical Soft</th>
+              <td><code>--wb-color-critical-soft</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f4e0d9" aria-hidden="true"></i><code>#f4e0d9</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#3a2728" aria-hidden="true"></i><code>#3a2728</code></span></td>
+            </tr><tr>
+              <th scope="row">On Critical</th>
+              <td><code>--wb-color-on-critical</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#fffaf4" aria-hidden="true"></i><code>#fffaf4</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#15131a" aria-hidden="true"></i><code>#15131a</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="docs-color-token-group">
+    <h3>Semantic states</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Semantic states color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Positive</th>
+              <td><code>--wb-color-positive</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#446845" aria-hidden="true"></i><code>#446845</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#7ca17c" aria-hidden="true"></i><code>#7ca17c</code></span></td>
+            </tr><tr>
+              <th scope="row">Positive Soft</th>
+              <td><code>--wb-color-positive-soft</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#e3ecdf" aria-hidden="true"></i><code>#e3ecdf</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#203128" aria-hidden="true"></i><code>#203128</code></span></td>
+            </tr><tr>
+              <th scope="row">Caution</th>
+              <td><code>--wb-color-caution</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#7d571d" aria-hidden="true"></i><code>#7d571d</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#c7a86e" aria-hidden="true"></i><code>#c7a86e</code></span></td>
+            </tr><tr>
+              <th scope="row">Caution Soft</th>
+              <td><code>--wb-color-caution-soft</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f4e8d5" aria-hidden="true"></i><code>#f4e8d5</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#392f22" aria-hidden="true"></i><code>#392f22</code></span></td>
+            </tr><tr>
+              <th scope="row">Info</th>
+              <td><code>--wb-color-info</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#3e6076" aria-hidden="true"></i><code>#3e6076</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#85a6c7" aria-hidden="true"></i><code>#85a6c7</code></span></td>
+            </tr><tr>
+              <th scope="row">Info Soft</th>
+              <td><code>--wb-color-info-soft</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#e4edf1" aria-hidden="true"></i><code>#e4edf1</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#203246" aria-hidden="true"></i><code>#203246</code></span></td>
+            </tr><tr>
+              <th scope="row">Focus</th>
+              <td><code>--wb-color-focus</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#386f8c" aria-hidden="true"></i><code>#386f8c</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#89b6d1" aria-hidden="true"></i><code>#89b6d1</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="docs-color-token-group">
+    <h3>Instrument &amp; Presence</h3>
+    <div class="docs-color-table-wrap" tabindex="0" aria-label="Instrument &amp; Presence color tokens">
+      <table class="docs-color-token-table">
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Light</th><th scope="col">Dark</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th scope="row">Instrument</th>
+              <td><code>--wb-color-instrument</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#26211c" aria-hidden="true"></i><code>#26211c</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#0c111a" aria-hidden="true"></i><code>#0c111a</code></span></td>
+            </tr><tr>
+              <th scope="row">Instrument Raised</th>
+              <td><code>--wb-color-instrument-raised</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#302922" aria-hidden="true"></i><code>#302922</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#151c29" aria-hidden="true"></i><code>#151c29</code></span></td>
+            </tr><tr>
+              <th scope="row">Instrument Text</th>
+              <td><code>--wb-color-instrument-text</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f7efe6" aria-hidden="true"></i><code>#f7efe6</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#f7f1e8" aria-hidden="true"></i><code>#f7f1e8</code></span></td>
+            </tr><tr>
+              <th scope="row">Instrument Muted</th>
+              <td><code>--wb-color-instrument-muted</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#b9ab9e" aria-hidden="true"></i><code>#b9ab9e</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#b9b3aa" aria-hidden="true"></i><code>#b9b3aa</code></span></td>
+            </tr><tr>
+              <th scope="row">Presence Eye</th>
+              <td><code>--wb-color-presence-eye</code></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#ffffff" aria-hidden="true"></i><code>#ffffff</code></span></td>
+              <td><span class="docs-color-value"><i style="--docs-color-value:#ffffff" aria-hidden="true"></i><code>#ffffff</code></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="how-to-use" data-detail-section="how-to-use">
+    <div class="docs-detail-section__head">
+      <h2>How to use</h2>
+      <p>대비는 의도적으로 사용하고, Signal은 드물게 유지하며, 상태 의미가 색상 하나에 의존하지 않게 합니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <div class="docs-do-dont">
+    <article data-guidance="do">
+      <span class="wbds-meta">DO</span>
+      <ul>
+        <li>raw palette value 대신 <code>--wb-color-action</code> 같은 semantic token을 사용합니다.</li>
+        <li>가장 강한 대비는 다음으로 중요한 결정이나 행동을 위해 남겨둡니다.</li>
+        <li>Signal은 review/noteworthy/evidence/editorial emphasis에 사용합니다.</li>
+        <li>Destructive 또는 prohibited consequence에는 Critical을 별도로 사용합니다.</li>
+        <li>상태 색상은 언어, semantic structure, 필요한 경우 shape/iconography, behavior와 함께 전달합니다.</li>
+      </ul>
+    </article>
+    <article data-guidance="dont">
+      <span class="wbds-meta">DON'T</span>
+      <ul>
+        <li>Warm Sakura를 모든 곳의 generic decorative accent로 사용하지 않습니다.</li>
+        <li>Signal을 Positive/success로 사용하지 않습니다.</li>
+        <li>상태를 색상 하나로만 전달하지 않습니다.</li>
+        <li>Light 값을 기계적으로 반전해 Dark를 만들지 않습니다.</li>
+        <li>semantic token이 있는데 문서의 hex 값을 복사해 사용하지 않습니다.</li>
+      </ul>
+    </article>
+  </div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="accessibility" data-detail-section="accessibility">
+    <div class="docs-detail-section__head">
+      <h2>Accessibility</h2>
+      <p>색상은 의미를 보조하며, semantic structure와 검증된 contrast가 함께 contract를 이룹니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+  <div class="docs-guidance-stack">
+    <p>WBDS에서 색상은 상태를 보조하는 evidence이며 유일한 evidence가 아닙니다. Light와 Dark mapping은 동일한 상태 의미와 focus visibility를 보존해야 합니다.</p>
+    <div class="docs-color-contrast-grid">
+      <article><strong>7:1</strong><span>Canvas/Surface 위 body text</span></article>
+      <article><strong>4.5:1</strong><span>token gate가 검증하는 Muted text, Action, Signal, Critical 및 semantic state text 조합</span></article>
+      <article><strong>7:1</strong><span>Soft Signal/Critical/Positive/Caution/Info surface 위 text 및 instrument text</span></article>
+      <article><strong>3:1</strong><span>Canvas 대비 Focus color</span></article>
+    </div>
+    <p><code>scripts/validate-tokens.mjs</code>는 이 contrast floor를 Light와 Dark token map 모두에서 검증합니다. token gate 통과가 컴포넌트 수준의 수동 visual/accessibility review를 대체하지는 않습니다.</p>
+  </div>
+    </div>
+  </section>
+  <section class="docs-detail-section" id="maturity-source" data-detail-section="maturity-source">
+    <div class="docs-detail-section__head">
+      <h2>Maturity &amp; Source</h2>
+      <p>Color는 approved Foundation Alpha이며 Stable이 아닙니다. 실제 consumer adoption에서 contract를 계속 검증해야 합니다.</p>
+    </div>
+    <div class="docs-detail-section__body">
+      
+        <div class="docs-source-list">
+          <article><span class="wbds-meta">STATUS</span><strong>Approved Foundation Alpha</strong><p>A2 / S1 / D1은 선택된 alpha foundation입니다. 실제 consumer adoption에서 문서화된 behavior contract가 검증되기 전에는 Stable로 보지 않습니다.</p></article>
+          <article><span class="wbds-meta">CANONICAL DATA</span><strong><code>catalog/tokens.json</code></strong><p>Light/Dark 값과 foundation decision metadata의 canonical source입니다.</p></article>
+          <article><span class="wbds-meta">IMPLEMENTATION</span><strong><code>packages/wbds/tokens.css</code> + <code>themes.css</code></strong><p>public CSS semantic token과 Dark remap 구현을 소유합니다.</p></article>
+          <article><span class="wbds-meta">GUIDANCE</span><strong><code>docs/foundations.md</code> + accessibility/principles</strong><p>role semantics, theme behavior, color-not-alone 요구사항의 근거를 제공합니다.</p></article>
+        </div>
+    </div>
+  </section>
+      </article>
+      
+  <nav class="docs-detail-toc" aria-label="On this page">
+    <strong>On this page</strong>
+    <ol>
+      <li><a href="#anatomy">Semantic architecture</a></li><li><a href="#variants">Light &amp; Dark</a></li><li><a href="#states">Semantic states</a></li><li><a href="#usage">Usage</a></li><li><a href="#color-structure">Color structure</a></li><li><a href="#how-to-use">How to use</a></li><li><a href="#accessibility">Accessibility</a></li><li><a href="#maturity-source">Maturity &amp; Source</a></li>
+    </ol>
+  </nav>
+    </div>
+
+    
+    <section class="docs-detail-related" aria-labelledby="docs-detail-related-title">
+      <h2 id="docs-detail-related-title">Related</h2>
+      <div>
+        <a href="/wbeen-design-system/foundations/">Foundations</a><span aria-disabled="true">Theme</span><span aria-disabled="true">Accessibility</span>
+      </div>
+    </section>
+    
+  </main>
+  
+<footer class="docs-global-footer wbds-page" data-docs-footer>
+  <a href="/wbeen-design-system/getting-started/" class="docs-global-footer__brand">WBDS · Quiet Instrument</a>
+  <span>Alpha · Docs v2 architecture</span>
+</footer>
+  <script type="module" src="/wbeen-design-system/app.js"></script>
+</body>
+</html>

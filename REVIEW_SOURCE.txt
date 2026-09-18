@@ -1,0 +1,5 @@
+WBDS review snapshot
+source branch: feat/docs-v2-architecture
+source commit: 30252b741226c3892890b442fa22544feb9a9447
+scope: CP10 Foundations > Color
+Generated without GitHub Actions.

@@ -1,0 +1,928 @@
+{
+  "$schemaVersion": "wbds-docs-content/v1",
+  "version": "2.0.0-alpha.1",
+  "status": "draft",
+  "locales": {
+    "default": "ko",
+    "supported": [
+      "ko",
+      "ja",
+      "en"
+    ],
+    "fallback": "en"
+  },
+  "domains": [
+    {
+      "id": "getting-started",
+      "order": 1,
+      "slug": "/getting-started",
+      "overview": "getting-started.overview"
+    },
+    {
+      "id": "foundations",
+      "order": 2,
+      "slug": "/foundations",
+      "overview": "foundations.overview"
+    },
+    {
+      "id": "components",
+      "order": 3,
+      "slug": "/components",
+      "overview": "components.overview"
+    },
+    {
+      "id": "utilities",
+      "order": 4,
+      "slug": "/utilities",
+      "overview": "utilities.overview"
+    }
+  ],
+  "staticPages": [
+    {
+      "id": "getting-started.overview",
+      "kind": "overview",
+      "domain": "getting-started",
+      "slug": "/getting-started",
+      "title": "Getting Started",
+      "status": "migration-ready",
+      "sources": [
+        "DESIGN.md",
+        "docs/principles.md",
+        "README.md"
+      ],
+      "description": "WBDS의 원칙, 운영 기준, 접근성, 성숙도와 도입 방법을 이해하기 위한 시작점입니다.",
+      "aliases": [
+        "home",
+        "start",
+        "overview",
+        "getting started"
+      ]
+    },
+    {
+      "id": "getting-started.principles",
+      "kind": "guide",
+      "domain": "getting-started",
+      "slug": "/getting-started/principles",
+      "title": "Principles",
+      "status": "migration-ready",
+      "sources": [
+        "docs/principles.md",
+        "DESIGN.md"
+      ]
+    },
+    {
+      "id": "getting-started.license",
+      "kind": "governance",
+      "domain": "getting-started",
+      "slug": "/getting-started/license",
+      "title": "License",
+      "status": "planned",
+      "sources": [
+        "README.md"
+      ],
+      "note": "Actual LICENSE source must exist before this page is marked complete."
+    },
+    {
+      "id": "getting-started.how-to-build",
+      "kind": "governance",
+      "domain": "getting-started",
+      "slug": "/getting-started/how-to-build",
+      "title": "How to build Design System",
+      "status": "migration-ready",
+      "sources": [
+        "docs/how-to-build-design-system.md",
+        "docs/docs-site-architecture-v2-plan.md"
+      ]
+    },
+    {
+      "id": "getting-started.accessibility",
+      "kind": "guide",
+      "domain": "getting-started",
+      "slug": "/getting-started/accessibility",
+      "title": "Accessibility",
+      "status": "migration-ready",
+      "sources": [
+        "docs/accessibility.md",
+        "apps/site/docs/accessibility.html"
+      ]
+    },
+    {
+      "id": "getting-started.anti-slop",
+      "kind": "guide",
+      "domain": "getting-started",
+      "slug": "/getting-started/anti-slop",
+      "title": "Anti-slop",
+      "status": "migration-ready",
+      "sources": [
+        "docs/anti-slop.md",
+        "docs/anti-slop-negative-examples.md",
+        "catalog/anti-slop-rules.json"
+      ]
+    },
+    {
+      "id": "getting-started.journey",
+      "kind": "governance",
+      "domain": "getting-started",
+      "slug": "/getting-started/journey",
+      "title": "Journey",
+      "status": "migration-ready",
+      "sources": [
+        "docs/journey.md",
+        "docs/project-ledger.md"
+      ],
+      "fixtures": [
+        "apps/site/fixtures/journey-foundation-alpha.html",
+        "apps/site/fixtures/visual-review.html"
+      ]
+    },
+    {
+      "id": "getting-started.maturity",
+      "kind": "governance",
+      "domain": "getting-started",
+      "slug": "/getting-started/maturity",
+      "title": "Maturity & Changelog",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/maturity.json",
+        "catalog/checkpoint.json",
+        "docs/project-ledger.md"
+      ]
+    },
+    {
+      "id": "getting-started.adoption",
+      "kind": "guide",
+      "domain": "getting-started",
+      "slug": "/getting-started/adoption",
+      "title": "Adoption & Contributing",
+      "status": "migration-ready",
+      "sources": [
+        "docs/adoption.md",
+        "docs/consumer-integration-v0.6.md",
+        "packages/wbds/README.md"
+      ]
+    },
+    {
+      "id": "getting-started.references",
+      "kind": "reference",
+      "domain": "getting-started",
+      "slug": "/getting-started/references",
+      "title": "References",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/references.json",
+        "docs/reference-ledger.md",
+        "apps/site/docs/resources.html"
+      ]
+    },
+    {
+      "id": "foundations.overview",
+      "kind": "overview",
+      "domain": "foundations",
+      "slug": "/foundations",
+      "title": "Foundations",
+      "status": "migration-ready",
+      "sources": [
+        "docs/foundations.md",
+        "catalog/components.json",
+        "catalog/tokens.json"
+      ],
+      "description": "모든 디자인 요소의 기반이 되는 가장 원자적인 시각·동작 언어를 다룹니다.",
+      "aliases": [
+        "foundation",
+        "tokens",
+        "visual language"
+      ]
+    },
+    {
+      "id": "foundations.color",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/color",
+      "title": "Color",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/tokens.json",
+        "docs/foundations.md",
+        "packages/wbds/tokens.css",
+        "packages/wbds/themes.css",
+        "docs/accessibility.md",
+        "docs/principles.md",
+        "scripts/validate-tokens.mjs"
+      ],
+      "description": "WBDS의 Neutral, Action, Signal, Critical 및 semantic state 색 역할을 Light A2와 Dark D1에서 일관된 토큰 계약으로 정의합니다.",
+      "docsState": "built"
+    },
+    {
+      "id": "foundations.typography",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/typography",
+      "title": "Typography",
+      "status": "migration-ready",
+      "sources": [
+        "docs/foundations.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.spacing",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/spacing",
+      "title": "Spacing",
+      "status": "planned",
+      "sources": [
+        "docs/foundations.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.grid-layout",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/grid-layout",
+      "title": "Grid & Layout",
+      "status": "planned",
+      "sources": [
+        "docs/foundations.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.density",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/density",
+      "title": "Density",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json",
+        "docs/foundations.md"
+      ]
+    },
+    {
+      "id": "foundations.shape-radius",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/shape-radius",
+      "title": "Shape & Radius",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/tokens.json",
+        "docs/foundations.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.border-elevation",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/border-elevation",
+      "title": "Border & Elevation",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/tokens.json",
+        "docs/foundations.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.theme",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/theme",
+      "title": "Theme",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/tokens.json",
+        "packages/wbds/themes.css",
+        "docs/foundations.md"
+      ]
+    },
+    {
+      "id": "foundations.motion",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/motion",
+      "title": "Motion",
+      "status": "migration-ready",
+      "sources": [
+        "docs/foundations.md",
+        "packages/wbds/motion.css"
+      ]
+    },
+    {
+      "id": "foundations.focus",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/focus",
+      "title": "Focus",
+      "status": "planned",
+      "sources": [
+        "docs/accessibility.md",
+        "packages/wbds/foundation.css"
+      ]
+    },
+    {
+      "id": "foundations.iconography",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/iconography",
+      "title": "Iconography",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json",
+        "docs/foundations.md"
+      ]
+    },
+    {
+      "id": "foundations.responsive",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/responsive",
+      "title": "Responsive",
+      "status": "planned",
+      "sources": [
+        "docs/accessibility.md",
+        "catalog/components.json"
+      ]
+    },
+    {
+      "id": "foundations.locale-content",
+      "kind": "foundation",
+      "domain": "foundations",
+      "slug": "/foundations/locale-content",
+      "title": "Locale & Content",
+      "status": "planned",
+      "sources": [
+        "docs/foundations.md",
+        "catalog/components.json"
+      ]
+    },
+    {
+      "id": "components.overview",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components",
+      "title": "Components",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/components.json",
+        "docs/component-contracts.md",
+        "docs/component-inventory.md"
+      ],
+      "description": "사용자 인터페이스를 구성하는 재사용 가능한 독립 UI 단위를 분류하고 연결합니다.",
+      "aliases": [
+        "component",
+        "ui components",
+        "catalog"
+      ]
+    },
+    {
+      "id": "components.actions",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/actions",
+      "title": "Actions",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "행동을 시작하거나 명령을 전달하는 컨트롤입니다."
+    },
+    {
+      "id": "components.selection-input",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/selection-input",
+      "title": "Selection & Input",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "값을 입력하고 선택하고 조정하는 인터랙션입니다."
+    },
+    {
+      "id": "components.feedback-status",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/feedback-status",
+      "title": "Feedback & Status",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "상태, 진행, 결과와 복구 가능성을 전달합니다."
+    },
+    {
+      "id": "components.navigation",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/navigation",
+      "title": "Navigation",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "사용자가 위치를 이해하고 다른 목적지로 이동하도록 돕습니다."
+    },
+    {
+      "id": "components.content-data",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/content-data",
+      "title": "Content & Data",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "콘텐츠와 구조화된 데이터를 읽고 비교하는 단위입니다."
+    },
+    {
+      "id": "components.disclosure-overlay",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/disclosure-overlay",
+      "title": "Disclosure & Overlay",
+      "status": "planned",
+      "sources": [
+        "catalog/components.json"
+      ],
+      "description": "추가 정보와 일시적인 작업 표면을 필요할 때 드러냅니다."
+    },
+    {
+      "id": "components.ai-agentic",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/ai-agentic",
+      "title": "AI & Agentic",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/components.json",
+        "catalog/ai-states.json",
+        "docs/ai-interface-contract.md",
+        "packages/wbds/ai.css",
+        "packages/wbds/ai-extended.css"
+      ],
+      "description": "AI 작업, 증거, 승인, 산출물과 에이전트 상태를 명시적으로 다룹니다."
+    },
+    {
+      "id": "components.ai-runtime-trust",
+      "kind": "guide",
+      "domain": "components",
+      "slug": "/components/ai-agentic/runtime-trust",
+      "title": "Runtime & Trust",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/ai-states.json",
+        "docs/ai-interface-contract.md"
+      ],
+      "fixtures": [
+        "apps/site/fixtures/ai-state-matrix.html"
+      ]
+    },
+    {
+      "id": "components.ai-presence",
+      "kind": "component",
+      "domain": "components",
+      "slug": "/components/ai-agentic/presence",
+      "title": "Presence",
+      "status": "migration-ready",
+      "sources": [
+        "packages/wbds/presence-pair.js",
+        "packages/wbds/presence-pair.css",
+        "apps/site/docs/presence.html"
+      ],
+      "fixtures": [
+        "apps/site/fixtures/presence-mark-v1.html",
+        "apps/site/fixtures/presence-motion-v1.html"
+      ]
+    },
+    {
+      "id": "components.patterns",
+      "kind": "overview",
+      "domain": "components",
+      "slug": "/components/patterns",
+      "title": "Patterns",
+      "status": "migration-ready",
+      "sources": [
+        "catalog/components.json",
+        "packages/wbds/patterns.css",
+        "packages/wbds/patterns-extended.css",
+        "apps/site/docs/patterns.html"
+      ],
+      "description": "여러 컴포넌트를 반복 가능한 작업 구조로 조합하는 패턴입니다."
+    },
+    {
+      "id": "components.patterns.workbench",
+      "kind": "pattern",
+      "domain": "components",
+      "slug": "/components/patterns/workbench",
+      "title": "Workbench",
+      "status": "migration-ready",
+      "sources": [
+        "packages/wbds/patterns.css",
+        "apps/site/docs/patterns.html"
+      ],
+      "fixtures": [
+        "apps/site/fixtures/workbench.html"
+      ]
+    },
+    {
+      "id": "components.patterns.editorial",
+      "kind": "pattern",
+      "domain": "components",
+      "slug": "/components/patterns/editorial",
+      "title": "Editorial",
+      "status": "migration-ready",
+      "sources": [
+        "apps/site/docs/patterns.html"
+      ],
+      "fixtures": [
+        "apps/site/fixtures/editorial.html"
+      ]
+    },
+    {
+      "id": "components.patterns.utility",
+      "kind": "pattern",
+      "domain": "components",
+      "slug": "/components/patterns/utility",
+      "title": "Utility",
+      "status": "migration-ready",
+      "sources": [
+        "packages/wbds/patterns.css",
+        "apps/site/docs/patterns.html"
+      ]
+    },
+    {
+      "id": "components.patterns.ai",
+      "kind": "pattern",
+      "domain": "components",
+      "slug": "/components/patterns/ai",
+      "title": "AI Composition",
+      "status": "migration-ready",
+      "sources": [
+        "packages/wbds/patterns.css",
+        "packages/wbds/ai.css",
+        "apps/site/docs/patterns.html"
+      ]
+    },
+    {
+      "id": "utilities.overview",
+      "kind": "overview",
+      "domain": "utilities",
+      "slug": "/utilities",
+      "title": "Utilities",
+      "status": "audit-pending",
+      "sources": [
+        "packages/wbds/",
+        "apps/site/app.js"
+      ],
+      "note": "Publish child pages only after CP18 confirms a reusable helper/runtime contract in source.",
+      "description": "디자인 시스템 전반에서 반복적으로 쓰이는 보조 기능과 스타일링 도구를 다룹니다. 실제 재사용 계약이 확인된 항목만 문서화합니다.",
+      "aliases": [
+        "utility",
+        "helpers"
+      ]
+    }
+  ],
+  "generatedInventory": {
+    "source": "catalog/components.json",
+    "familyRoutes": {
+      "controls": {
+        "split": [
+          {
+            "category": "actions",
+            "base": "/components/actions",
+            "items": [
+              "button",
+              "icon-button",
+              "link"
+            ]
+          },
+          {
+            "category": "selection-input",
+            "base": "/components/selection-input",
+            "remaining": true
+          }
+        ]
+      },
+      "navigation": {
+        "category": "navigation",
+        "base": "/components/navigation"
+      },
+      "feedback": {
+        "category": "feedback-status",
+        "base": "/components/feedback-status"
+      },
+      "overlayDisclosure": {
+        "category": "disclosure-overlay",
+        "base": "/components/disclosure-overlay"
+      },
+      "contentData": {
+        "category": "content-data",
+        "base": "/components/content-data"
+      },
+      "patterns": {
+        "category": "patterns",
+        "base": "/components/patterns"
+      },
+      "ai": {
+        "category": "ai-agentic",
+        "base": "/components/ai-agentic"
+      }
+    },
+    "statusRules": {
+      "alphaCoded": "migration-ready",
+      "deferredUntilConsumer": "deferred",
+      "otherwise": "planned"
+    },
+    "overrides": {
+      "native-select": {
+        "canonicalInventoryId": "select-combobox",
+        "slug": "select",
+        "publicTitle": "Select"
+      },
+      "toast-snackbar-surface": {
+        "canonicalInventoryId": "toast-snackbar",
+        "slug": "toast-snackbar",
+        "publicTitle": "Toast / Snackbar"
+      },
+      "popover-surface": {
+        "canonicalInventoryId": "popover",
+        "slug": "popover",
+        "publicTitle": "Popover"
+      },
+      "table-wrapper": {
+        "canonicalInventoryId": "table",
+        "slug": "table",
+        "publicTitle": "Table"
+      },
+      "data-grid-deferred": {
+        "slug": "data-grid",
+        "publicTitle": "Data Grid",
+        "status": "deferred"
+      },
+      "badge-restricted": {
+        "slug": "badge",
+        "publicTitle": "Badge",
+        "status": "planned"
+      },
+      "card-restricted": {
+        "slug": "card",
+        "publicTitle": "Card",
+        "status": "planned"
+      }
+    }
+  },
+  "legacyRoutes": [
+    {
+      "from": "/",
+      "mode": "move",
+      "to": [
+        "getting-started.overview"
+      ]
+    },
+    {
+      "from": "/docs/foundations.html",
+      "mode": "split",
+      "to": [
+        "foundations.overview",
+        "foundations.color",
+        "foundations.typography",
+        "foundations.shape-radius",
+        "foundations.border-elevation",
+        "foundations.theme",
+        "foundations.motion"
+      ]
+    },
+    {
+      "from": "/docs/components.html",
+      "mode": "split",
+      "to": [
+        "components.overview",
+        "components.actions",
+        "components.selection-input",
+        "components.feedback-status",
+        "components.navigation",
+        "components.content-data",
+        "components.disclosure-overlay"
+      ],
+      "note": "Leaf routes are generated from catalog/components.json."
+    },
+    {
+      "from": "/docs/patterns.html",
+      "mode": "split",
+      "to": [
+        "components.patterns",
+        "components.patterns.workbench",
+        "components.patterns.editorial",
+        "components.patterns.utility",
+        "components.patterns.ai"
+      ]
+    },
+    {
+      "from": "/docs/ai-agentic.html",
+      "mode": "split",
+      "to": [
+        "components.ai-agentic",
+        "components.ai-runtime-trust"
+      ],
+      "note": "AI leaf routes are generated from catalog/components.json."
+    },
+    {
+      "from": "/docs/presence.html",
+      "mode": "move",
+      "to": [
+        "components.ai-presence"
+      ]
+    },
+    {
+      "from": "/docs/accessibility.html",
+      "mode": "move",
+      "to": [
+        "getting-started.accessibility"
+      ]
+    },
+    {
+      "from": "/docs/resources.html",
+      "mode": "split",
+      "to": [
+        "getting-started.adoption",
+        "getting-started.maturity",
+        "getting-started.references",
+        "getting-started.journey"
+      ]
+    },
+    {
+      "from": "/fixtures/workbench.html",
+      "mode": "evidence-only",
+      "to": [
+        "components.patterns.workbench"
+      ]
+    },
+    {
+      "from": "/fixtures/editorial.html",
+      "mode": "evidence-only",
+      "to": [
+        "components.patterns.editorial"
+      ]
+    },
+    {
+      "from": "/fixtures/ai-state-matrix.html",
+      "mode": "evidence-only",
+      "to": [
+        "components.ai-runtime-trust"
+      ]
+    },
+    {
+      "from": "/fixtures/presence-mark-v1.html",
+      "mode": "evidence-only",
+      "to": [
+        "components.ai-presence"
+      ]
+    },
+    {
+      "from": "/fixtures/presence-motion-v1.html",
+      "mode": "evidence-only",
+      "to": [
+        "components.ai-presence"
+      ]
+    },
+    {
+      "from": "/fixtures/journey-foundation-alpha.html",
+      "mode": "evidence-only",
+      "to": [
+        "getting-started.journey",
+        "foundations.overview"
+      ]
+    },
+    {
+      "from": "/fixtures/visual-review.html",
+      "mode": "evidence-only",
+      "to": [
+        "getting-started.journey"
+      ]
+    },
+    {
+      "from": "/fixtures/hardening.html",
+      "mode": "evidence-only",
+      "to": [
+        "getting-started.accessibility"
+      ]
+    }
+  ],
+  "utilitiesAudit": {
+    "state": "pending",
+    "candidateSources": [
+      "packages/wbds/command.css",
+      "packages/wbds/foundation.css",
+      "packages/wbds/themes.css",
+      "packages/wbds/motion.css",
+      "apps/site/app.js"
+    ],
+    "rule": "Do not publish a utility page until a reusable helper/runtime contract is confirmed in source."
+  },
+  "policies": {
+    "usage": {
+      "requiredForComponentDetail": true,
+      "subcases": "case-by-case"
+    },
+    "specimen": {
+      "frame": "neutral-grayscale",
+      "realImplementationPreferred": true,
+      "pageLocalLookalikeForbidden": true
+    },
+    "navigation": {
+      "manifestDriven": true,
+      "globalControls": [
+        "search",
+        "theme-toggle",
+        "language-selector",
+        "menu"
+      ],
+      "duplicatePageLocalTreesForbidden": true
+    },
+    "ci": {
+      "cp01ToCp22": "avoid-github-actions",
+      "fullCiAt": "CP24-production-readiness",
+      "taskBranchValidation": "source-review-plus-manual-preview"
+    }
+  },
+  "domainDescriptions": {
+    "getting-started": "WBDS의 원칙, 운영 기준, 접근성, 성숙도와 도입 방법을 이해하기 위한 시작점입니다.",
+    "foundations": "모든 디자인 요소의 기반이 되는 가장 원자적인 시각·동작 언어를 다룹니다.",
+    "components": "사용자 인터페이스를 구성하는 재사용 가능한 독립 UI 단위를 분류하고 연결합니다.",
+    "utilities": "디자인 시스템 전반에서 반복적으로 쓰이는 보조 기능과 스타일링 도구를 다룹니다. 실제 재사용 계약이 확인된 항목만 문서화합니다."
+  },
+  "overviewGroups": {
+    "getting-started": [
+      {
+        "id": "getting-started.learn",
+        "title": "Learn",
+        "description": "WBDS가 무엇을 중요하게 여기고 어떻게 만들어지는지 이해합니다.",
+        "items": [
+          "getting-started.principles",
+          "getting-started.license",
+          "getting-started.how-to-build"
+        ]
+      },
+      {
+        "id": "getting-started.quality-governance",
+        "title": "Quality & Governance",
+        "description": "접근성, anti-slop, 성숙도와 변경 이력을 통해 품질 기준과 판단 근거를 확인합니다.",
+        "items": [
+          "getting-started.accessibility",
+          "getting-started.anti-slop",
+          "getting-started.maturity",
+          "getting-started.journey"
+        ]
+      },
+      {
+        "id": "getting-started.adopt-reference",
+        "title": "Adopt & Reference",
+        "description": "제품 적용 방법과 외부 참고 근거를 확인합니다.",
+        "items": [
+          "getting-started.adoption",
+          "getting-started.references"
+        ]
+      }
+    ],
+    "foundations": [
+      {
+        "id": "foundations.visual-language",
+        "title": "Visual Language",
+        "description": "색, 글자, 형태, 경계와 깊이처럼 WBDS의 인상을 만드는 기본 언어입니다.",
+        "items": [
+          "foundations.color",
+          "foundations.typography",
+          "foundations.shape-radius",
+          "foundations.border-elevation",
+          "foundations.theme",
+          "foundations.iconography"
+        ]
+      },
+      {
+        "id": "foundations.layout-rhythm",
+        "title": "Layout & Rhythm",
+        "description": "공간, 그리드, 밀도와 반응형 규칙으로 화면의 리듬을 구성합니다.",
+        "items": [
+          "foundations.spacing",
+          "foundations.grid-layout",
+          "foundations.density",
+          "foundations.responsive"
+        ]
+      },
+      {
+        "id": "foundations.behavior-content",
+        "title": "Behavior & Content",
+        "description": "움직임, 포커스, 언어와 콘텐츠가 상호작용하는 방식을 정의합니다.",
+        "items": [
+          "foundations.motion",
+          "foundations.focus",
+          "foundations.locale-content"
+        ]
+      }
+    ]
+  }
+}
