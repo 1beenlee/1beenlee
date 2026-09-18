@@ -1817,8 +1817,8 @@ html,body{overflow-x:clip}body{min-width:320px}
 .docs-color-state-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wb-space-4)}.docs-color-state-grid article{display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:var(--wb-space-3);align-items:start;padding:var(--wb-space-4) 0;border-top:var(--wb-border)}.docs-color-state-grid article>span{width:18px;height:18px;margin-top:2px;border-radius:var(--wb-radius-control);background:var(--docs-state-color)}.docs-color-state-grid strong{font-size:.82rem}.docs-color-state-grid p{grid-column:2;margin:var(--wb-space-1) 0 0;color:var(--wb-color-text-muted);font-size:.78rem}.docs-color-state-grid [data-color-state=action]{--docs-state-color:var(--wb-color-action)}.docs-color-state-grid [data-color-state=signal]{--docs-state-color:var(--wb-color-signal-strong)}.docs-color-state-grid [data-color-state=critical]{--docs-state-color:var(--wb-color-critical)}.docs-color-state-grid [data-color-state=positive]{--docs-state-color:var(--wb-color-positive)}.docs-color-state-grid [data-color-state=caution]{--docs-state-color:var(--wb-color-caution)}.docs-color-state-grid [data-color-state=info]{--docs-state-color:var(--wb-color-info)}.docs-color-state-grid [data-color-state=focus]{--docs-state-color:var(--wb-color-focus)}
 .docs-guidance-stack{display:grid;gap:var(--wb-space-6)}.docs-guidance-stack>article{padding-top:var(--wb-space-4);border-top:var(--wb-border)}.docs-guidance-stack>article:first-child{padding-top:0;border-top:0}.docs-guidance-stack h3{margin:0 0 var(--wb-space-2);font-size:.94rem}.docs-guidance-stack p{margin:0;color:var(--wb-color-text-muted)}
 .docs-color-token-group{margin-top:var(--wb-space-8)}.docs-color-token-group:first-child{margin-top:0}.docs-color-token-group h3{margin:0 0 var(--wb-space-3);font-size:.9rem}.docs-color-table-wrap{overflow:auto;border:var(--wb-border);border-radius:var(--wb-radius-panel)}.docs-color-token-table{width:100%;min-width:760px;border-collapse:separate;border-spacing:0;background:var(--wb-color-surface)}.docs-color-token-table th,.docs-color-token-table td{padding:var(--wb-space-3) var(--wb-space-4);border-bottom:var(--wb-border);text-align:left;vertical-align:middle}.docs-color-token-table thead th{color:var(--wb-color-text-subtle);font:.65rem/1.3 var(--wb-font-meta)}.docs-color-token-table tbody th{font-size:.76rem}.docs-color-token-table tbody tr:last-child>*{border-bottom:0}.docs-color-context-cell{background:var(--docs-context-surface);color:var(--docs-context-text);border-left:1px solid var(--docs-context-border)!important;border-bottom-color:var(--docs-context-border)!important}.docs-color-token-table thead .docs-color-context-cell{color:var(--docs-context-muted)}.docs-color-value{display:inline-flex;align-items:center;gap:var(--wb-space-2);max-width:100%}.docs-color-value i{width:18px;height:18px;flex:0 0 auto;border:1px solid var(--docs-context-border,var(--wb-color-border));border-radius:var(--wb-radius-control);background:var(--docs-color-value)}
-.docs-copy-chip{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:28px;padding:3px 8px;border:1px solid var(--docs-context-border,var(--wb-color-border));border-radius:var(--wb-radius-round);background:color-mix(in srgb,var(--docs-context-text,var(--wb-color-text)) 6%,var(--docs-context-surface,var(--wb-color-surface)));color:var(--docs-context-text,var(--wb-color-text));cursor:pointer;overflow:hidden;transition:background var(--wb-motion-fast) var(--wb-ease-standard),border-color var(--wb-motion-fast) var(--wb-ease-standard)}.docs-copy-chip:hover{background:color-mix(in srgb,var(--docs-context-text,var(--wb-color-text)) 11%,var(--docs-context-surface,var(--wb-color-surface)));border-color:var(--docs-context-muted,var(--wb-color-border-strong))}.docs-copy-chip:focus-visible,.docs-reference-badge__copy:focus-visible{outline:2px solid var(--wb-color-focus);outline-offset:2px}.docs-copy-chip code{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 .67rem/1.25 var(--wb-font-code);color:inherit}.docs-copy-chip__icon,.docs-copy-chip__feedback{position:absolute;inset-block:0;right:0;display:flex;align-items:center;justify-content:center;padding-inline:7px;background:linear-gradient(90deg,transparent 0%,var(--docs-context-surface,var(--wb-color-surface)) 34%,var(--docs-context-surface,var(--wb-color-surface)) 100%);opacity:0;pointer-events:none;transition:opacity var(--wb-motion-fast) var(--wb-ease-standard)}.docs-copy-chip__icon svg,.docs-reference-badge svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}.docs-copy-chip__feedback{font:.64rem/1.25 var(--wb-font-meta)}.docs-copy-chip:hover .docs-copy-chip__icon,.docs-copy-chip:focus-visible .docs-copy-chip__icon{opacity:1}.docs-copy-chip[data-copy-state=copied] .docs-copy-chip__icon{opacity:0}.docs-copy-chip[data-copy-state=copied] .docs-copy-chip__feedback{opacity:1}.docs-copy-chip[data-copy-state=copied]{border-color:var(--wb-color-positive);color:var(--wb-color-positive)}.docs-copy-chip--hex{padding-inline:7px}
-.docs-reference-badge{display:inline-flex;align-items:stretch;max-width:100%;border:var(--wb-border);border-radius:var(--wb-radius-control);background:var(--wb-color-surface-muted);color:var(--wb-color-text);overflow:hidden}.docs-reference-badge__target{display:inline-flex;align-items:center;gap:var(--wb-space-2);min-width:0;padding:6px 9px;color:inherit;text-decoration:none}.docs-reference-badge__file{display:inline-flex;flex:0 0 auto;color:var(--wb-color-text-muted)}.docs-reference-badge code{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 .67rem/1.3 var(--wb-font-code)}.docs-reference-badge__copy{display:inline-grid;place-items:center;width:30px;flex:0 0 30px;padding:0;border:0;border-left:var(--wb-border);background:transparent;color:var(--wb-color-text-muted);cursor:pointer}.docs-reference-badge__copy:hover{background:var(--wb-color-surface);color:var(--wb-color-text)}.docs-reference-badge__copy[data-copy-state=copied]{background:var(--wb-color-positive-soft);color:var(--wb-color-positive)}
+.docs-copy-chip{position:relative;display:inline-flex;align-items:center;max-width:100%;min-height:28px;padding:3px 8px;border:1px solid var(--docs-context-border,var(--wb-color-border));border-radius:var(--wb-radius-round);background:color-mix(in srgb,var(--docs-context-text,var(--wb-color-text)) 6%,var(--docs-context-surface,var(--wb-color-surface)));color:var(--docs-context-text,var(--wb-color-text));cursor:pointer;overflow:hidden;transition:background var(--wb-motion-fast) var(--wb-ease-standard),border-color var(--wb-motion-fast) var(--wb-ease-standard)}.docs-copy-chip:hover{background:color-mix(in srgb,var(--docs-context-text,var(--wb-color-text)) 11%,var(--docs-context-surface,var(--wb-color-surface)));border-color:var(--docs-context-muted,var(--wb-color-border-strong))}.docs-copy-chip:focus-visible,.docs-reference-badge__copy:focus-visible{outline:2px solid var(--wb-color-focus);outline-offset:2px}.docs-copy-chip code{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 .67rem/1.25 var(--wb-font-code);color:inherit}.docs-copy-chip__icon,.docs-copy-chip__feedback{position:absolute;inset-block:0;right:0;display:flex;align-items:center;justify-content:center;padding-inline:7px;background:linear-gradient(90deg,transparent 0%,var(--docs-context-surface,var(--wb-color-surface)) 34%,var(--docs-context-surface,var(--wb-color-surface)) 100%);opacity:0;pointer-events:none;transition:opacity var(--wb-motion-fast) var(--wb-ease-standard)}.docs-copy-chip__icon svg,.docs-copy-chip__feedback svg,.docs-reference-badge svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.docs-copy-chip__feedback{font:.64rem/1.25 var(--wb-font-meta)}.docs-copy-chip:hover .docs-copy-chip__icon,.docs-copy-chip:focus-visible .docs-copy-chip__icon{opacity:1}.docs-copy-chip[data-copy-state=copied] .docs-copy-chip__icon{opacity:0}.docs-copy-chip[data-copy-state=copied] .docs-copy-chip__feedback{opacity:1}.docs-copy-chip[data-copy-state=copied]{border-color:var(--wb-color-positive);color:var(--wb-color-positive)}.docs-copy-chip--hex{padding-inline:7px}
+.docs-reference-badge{display:inline-flex;align-items:stretch;max-width:100%;border:var(--wb-border);border-radius:var(--wb-radius-control);background:var(--wb-color-surface-muted);color:var(--wb-color-text);overflow:hidden}.docs-reference-badge__target{display:inline-flex;align-items:center;gap:var(--wb-space-2);min-width:0;padding:6px 9px;color:inherit;text-decoration:none}.docs-reference-badge__file{display:inline-flex;flex:0 0 auto;color:var(--wb-color-text-muted)}.docs-reference-badge code{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 .67rem/1.3 var(--wb-font-code)}.docs-reference-badge__copy{display:inline-grid;place-items:center;width:30px;flex:0 0 30px;padding:0;border:0;border-left:var(--wb-border);background:transparent;color:var(--wb-color-text-muted);cursor:pointer}.docs-reference-badge__copy:hover{background:var(--wb-color-surface);color:var(--wb-color-text)}.docs-reference-badge__copy-success{display:none}.docs-reference-badge__copy[data-copy-state=copied]{background:var(--wb-color-positive-soft);color:var(--wb-color-positive)}.docs-reference-badge__copy[data-copy-state=copied] .docs-reference-badge__copy-idle{display:none}.docs-reference-badge__copy[data-copy-state=copied] .docs-reference-badge__copy-success{display:inline-flex}
 .docs-do-dont{display:grid;grid-template-columns:1fr 1fr;gap:var(--wb-space-8)}.docs-do-dont article{padding-top:var(--wb-space-4);border-top:4px solid var(--docs-guidance-color)}.docs-do-dont [data-guidance=do]{--docs-guidance-color:var(--wb-color-positive)}.docs-do-dont [data-guidance=dont]{--docs-guidance-color:var(--wb-color-critical)}.docs-guidance-label{display:inline-flex;align-items:center;gap:var(--wb-space-2);color:var(--docs-guidance-color);font-weight:700}.docs-guidance-mark{display:grid;place-items:center;width:22px;height:22px;flex:0 0 22px;border:2px solid currentColor;border-radius:50%;font:700 .78rem/1 var(--wb-font-body)}.docs-do-dont ul{margin:var(--wb-space-3) 0 0;padding-left:1.15rem}.docs-do-dont li+li{margin-top:var(--wb-space-2)}
 .docs-color-contrast-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wb-space-3);margin-top:var(--wb-space-2);padding-top:2px;overflow:visible}.docs-color-contrast-card{box-sizing:border-box;min-height:104px;padding:var(--wb-space-5) var(--wb-space-4);border:1px solid var(--wb-color-border);border-radius:var(--wb-radius-panel);background:var(--wb-color-surface);background-clip:padding-box;overflow:visible}.docs-color-contrast-card strong{display:block;padding-top:1px;font:700 1.45rem/1.2 var(--wb-font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}.docs-color-contrast-card span{display:block;margin-top:var(--wb-space-2);color:var(--wb-color-text-muted);font-size:.76rem;line-height:1.5}
 .docs-source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wb-space-4)}.docs-source-list article{padding:var(--wb-space-4);border-top:var(--wb-border)}.docs-source-list strong{display:block;margin:var(--wb-space-2) 0}.docs-source-reference-row{display:flex;flex-wrap:wrap;gap:var(--wb-space-2);margin:var(--wb-space-2) 0 var(--wb-space-3)}.docs-source-list p{margin:0;color:var(--wb-color-text-muted);font-size:.78rem}
@@ -2260,7 +2260,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2279,7 +2281,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2300,7 +2304,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2320,7 +2326,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2339,7 +2347,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2360,7 +2370,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2380,7 +2392,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2399,7 +2413,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2420,7 +2436,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2440,7 +2458,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2459,7 +2479,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2480,7 +2502,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2500,7 +2524,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2519,7 +2545,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2540,7 +2568,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2560,7 +2590,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2579,7 +2611,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2600,7 +2634,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2620,7 +2656,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2639,7 +2677,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2660,7 +2700,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2680,7 +2722,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2699,7 +2743,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2720,7 +2766,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2740,7 +2788,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2759,7 +2809,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2780,7 +2832,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2800,7 +2854,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2819,7 +2875,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2840,7 +2898,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2878,7 +2938,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2897,7 +2959,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2918,7 +2982,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2938,7 +3004,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -2957,7 +3025,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2978,7 +3048,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -2998,7 +3070,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3017,7 +3091,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3038,7 +3114,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3058,7 +3136,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3077,7 +3157,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3098,7 +3180,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3136,7 +3220,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3155,7 +3241,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3176,7 +3264,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3196,7 +3286,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3215,7 +3307,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3236,7 +3330,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3256,7 +3352,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3275,7 +3373,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3296,7 +3396,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3316,7 +3418,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3335,7 +3439,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3356,7 +3462,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3376,7 +3484,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3395,7 +3505,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3416,7 +3528,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3436,7 +3550,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3455,7 +3571,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3476,7 +3594,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3514,7 +3634,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3533,7 +3655,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3554,7 +3678,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3574,7 +3700,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3593,7 +3721,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3614,7 +3744,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3634,7 +3766,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3653,7 +3787,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3674,7 +3810,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3694,7 +3832,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3713,7 +3853,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3734,7 +3876,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3754,7 +3898,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3773,7 +3919,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3794,7 +3942,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3832,7 +3982,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3851,7 +4003,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3872,7 +4026,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3892,7 +4048,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3911,7 +4069,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3932,7 +4092,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3952,7 +4114,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -3971,7 +4135,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -3992,7 +4158,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4012,7 +4180,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4031,7 +4201,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4052,7 +4224,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4072,7 +4246,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4091,7 +4267,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4112,7 +4290,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4132,7 +4312,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4151,7 +4333,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4172,7 +4356,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4192,7 +4378,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4211,7 +4399,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4232,7 +4422,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4270,7 +4462,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4289,7 +4483,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4310,7 +4506,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4330,7 +4528,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4349,7 +4549,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4370,7 +4572,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4390,7 +4594,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4409,7 +4615,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4430,7 +4638,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4450,7 +4660,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4469,7 +4681,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4490,7 +4704,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4510,7 +4726,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button></td>
               <td class="docs-color-context-cell" data-theme-context="light" style="--docs-context-surface:#fbf7f1;--docs-context-text:#231f1a;--docs-context-muted:#685e54;--docs-context-border:#d4c5b4">
                 <span class="docs-color-value">
@@ -4529,7 +4747,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4550,7 +4770,9 @@ html,body{overflow-x:clip}body{min-width:320px}
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
   </svg></span>
-      <span class="docs-copy-chip__feedback" aria-hidden="true">Copied</span>
+      <span class="docs-copy-chip__feedback" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
     </button>
                 </span>
               </td>
@@ -4638,10 +4860,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span></div><p>Light/Dark 값과 foundation decision metadata의 canonical source입니다.</p></article>
@@ -4663,10 +4888,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span>
@@ -4687,10 +4915,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span></div><p>public CSS semantic token과 Dark remap 구현을 소유합니다.</p></article>
@@ -4712,10 +4943,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span>
@@ -4736,10 +4970,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span>
@@ -4760,10 +4997,13 @@ html,body{overflow-x:clip}body{min-width:320px}
           title="Copy path"
         >
           
-  <svg viewBox="0 0 20 20" aria-hidden="true">
+  <span class="docs-reference-badge__copy-idle" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
     <rect x="6.5" y="6.5" width="8" height="8" rx="1.5"></rect>
     <path d="M5 12.5H4.5A1.5 1.5 0 0 1 3 11V4.5A1.5 1.5 0 0 1 4.5 3H11A1.5 1.5 0 0 1 12.5 4.5V5"></path>
-  </svg>
+  </svg></span>
+          <span class="docs-reference-badge__copy-success" aria-hidden="true"><svg viewBox="0 0 20 20" aria-hidden="true">
+    <path d="m4.5 10.25 3.25 3.25 7.75-7.75"></path>
+  </svg></span>
           <span class="wbds-sr-only">Copy path</span>
         </button>
     </span></div><p>role semantics, theme behavior, color-not-alone 요구사항의 근거를 제공합니다.</p></article>
