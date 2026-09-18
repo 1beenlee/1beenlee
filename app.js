@@ -28,6 +28,56 @@ const updateTokenReadouts = () => {
   });
 };
 
+const copyText = async (value) => {
+  if (!value) return false;
+
+  try {
+    await navigator.clipboard.writeText(value);
+    return true;
+  } catch {
+    const fallback = document.createElement('textarea');
+    fallback.value = value;
+    fallback.setAttribute('readonly', '');
+    fallback.style.position = 'fixed';
+    fallback.style.opacity = '0';
+    document.body.append(fallback);
+    fallback.select();
+
+    let copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch {
+      copied = false;
+    }
+
+    fallback.remove();
+    return copied;
+  }
+};
+
+const updateCopyFeedback = (trigger, copied) => {
+  const initialLabel = trigger.dataset.copyInitialLabel || trigger.getAttribute('aria-label') || 'Copy';
+  if (!trigger.dataset.copyInitialLabel) trigger.dataset.copyInitialLabel = initialLabel;
+
+  trigger.dataset.copyState = copied ? 'copied' : 'failed';
+  trigger.setAttribute('aria-label', copied ? 'Copied' : 'Copy failed');
+  trigger.setAttribute('title', copied ? 'Copied' : 'Copy failed');
+
+  window.setTimeout(() => {
+    trigger.dataset.copyState = 'idle';
+    trigger.setAttribute('aria-label', initialLabel);
+    trigger.setAttribute('title', initialLabel);
+  }, 1400);
+};
+
+document.addEventListener('click', async (event) => {
+  const trigger = event.target.closest('[data-copy-value]');
+  if (!trigger) return;
+  event.preventDefault();
+  const copied = await copyText(trigger.dataset.copyValue || '');
+  updateCopyFeedback(trigger, copied);
+});
+
 const docsShell = document.querySelector('[data-docs-shell]');
 
 const updateDocsThemeControl = () => {
