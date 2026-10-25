@@ -3,6 +3,8 @@
 [![Career](https://img.shields.io/badge/Career-Wonbeen%20Lee-blue?style=for-the-badge&logo=vercel&logoColor=white)](https://personal-ai-ops.vercel.app/wbeen/career/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-wonbeenlee-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wonbeenlee/recent-activity/all/)
 
+**English introduction and projects are available below: [Jump to English ↓](#english).**
+
 **Global Product Manager @ emro · Caidentia | Agentic AI · Enterprise SaaS · Product Ops**
 
 ## 日本語
@@ -17,10 +19,31 @@ SRM/S2Pの機能企画に加え、Agentic AIの要件定義、UX、権限・人�
 - **実務の規模:** 300件以上のJira Epic、直近1年間で300件以上のConfluenceドキュメント、10種類以上のチーム共有AI Skillの作成・運用に携わりました。
 - **東京への移住:** 2027年初めを予定しています。日本の在留資格はまだ取得しておらず、COE・日本人の配偶者等の在留資格取得に向けた手続きは今後開始する予定です。
 
-[**職務経歴・Resume / CV・プロダクト事例を見る**](https://personal-ai-ops.vercel.app/wbeen/career/)
+[**職務経歴・Resume / CV・プロダクト事例を見る**](https://personal-ai-ops.vercel.app/wbeen/career/?lang=ja)
+
+## 主な個人プロジェクト
+
+### 自主開発プロダクト · 公開サイト
+
+| プロジェクト | 内容 |
+| --- | --- |
+| **[Personal AI Operating Site (PAOS)](https://personal-ai-ops.vercel.app/wbeen/)** | 人とAIエージェントの両方が利用できる個人ナレッジプロダクト。多言語のキャリア情報、知識間の関係性、公開範囲の管理を設計 |
+| **[Prompt Hotbar](https://prompt-hotbar.vercel.app/)** | 日々のAI作業で使うプロンプトやツール情報を素早く探してコピーできる、キーボード中心のワークスペース |
+| **[WBDS 01](https://wbeen-design-system-01.vercel.app/)** | コンポーネント、インタラクション、デザイン原則、検証ルールを備えた独自デザインシステム |
+
+*上記のWebサイトは公開していますが、ソースコードのリポジトリは非公開です。*
+
+### オープンソース · 公開リポジトリ
+
+| プロジェクト | 内容 |
+| --- | --- |
+| **[getslide.md](https://github.com/1beenlee/getslide-md)** | 原資料の根拠を維持しながら、AIで編集可能な単一HTMLプレゼンテーションを作成するAgent Skillワークフロー |
+| **[Universal Context Handoff](https://github.com/1beenlee/universal-context-handoff)** | AI開発環境やリポジトリをまたぐ際に、作業コンテキストと元のパス情報を引き継ぐCLI・Agent Skill |
+| **[Prompt Guessor](https://github.com/1beenlee/prompt-guesser)** | 画像から生成プロンプトを推測する実験的なMVP |
 
 ---
 
+<a id="english"></a>
 ## English
 
 Hi, I'm Wonbeen Lee, a Global Product Manager at emro working on **Caidentia**, an enterprise SRM/S2P procurement SaaS platform.
@@ -31,7 +54,7 @@ I connect complex procurement workflows and AI capabilities with product decisio
 - **Operating scale:** 300+ Jira epics created or managed across planning and releases, 300+ Confluence documents authored or maintained over the past year, and 10+ reusable AI Skills shared with the planning team.
 - **Tokyo relocation:** Planned for early 2027. I have not yet obtained Japanese residence status; I intend to begin the COE and spouse-status process.
 
-[**Career, resume, and selected product case studies**](https://personal-ai-ops.vercel.app/wbeen/career/)
+[**Career, resume, and selected product case studies**](https://personal-ai-ops.vercel.app/wbeen/career/?lang=en)
 
 ---
 
@@ -55,7 +78,7 @@ I connect complex procurement workflows and AI capabilities with product decisio
 | **[Universal Context Handoff](https://github.com/1beenlee/universal-context-handoff)** | Preserves source paths and work context when AI-assisted development moves between repositories and assistants |
 | **[Prompt Guessor](https://github.com/1beenlee/prompt-guesser)** | An experimental image-based prompt-guessing game and static-first MVP |
 
-**More about my professional work:** [PAOS Career](https://personal-ai-ops.vercel.app/wbeen/career/) · [LinkedIn](https://www.linkedin.com/in/wonbeenlee/)
+**More about my professional work:** [PAOS Career](https://personal-ai-ops.vercel.app/wbeen/career/?lang=en) · [LinkedIn](https://www.linkedin.com/in/wonbeenlee/)
 
 > Company work and independent projects are separate. I share only public-safe descriptions of professional contributions; private implementation details and employer materials are not published here.
 
@@ -80,6 +103,6 @@ SRM/S2P 제품기획과 Agentic AI의 요구사항, UX, 권한·사람의 검토
 - [getslide.md](https://github.com/1beenlee/getslide-md) — 출처 기반 HTML 프레젠테이션 워크플로
 - [Universal Context Handoff](https://github.com/1beenlee/universal-context-handoff) — AI 개발환경 간 컨텍스트 인계
 
-[커리어 및 경력기술서 보기](https://personal-ai-ops.vercel.app/wbeen/career/) · [LinkedIn 활동 보기](https://www.linkedin.com/in/wonbeenlee/recent-activity/all/)
+[커리어 및 경력기술서 보기](https://personal-ai-ops.vercel.app/wbeen/career/?lang=ko) · [LinkedIn 활동 보기](https://www.linkedin.com/in/wonbeenlee/recent-activity/all/)
 
 </details>
